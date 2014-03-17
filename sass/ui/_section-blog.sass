@@ -1,0 +1,149 @@
+.block__blog
+  @extend .is__background--c-white
+.blog__box
+  +outer-container
+.blog__row
+  @extend .row
+
+.blog__posts
+  +span-columns(6)
+  +media($tabletopish)
+    +span-columns(9 of 12)
+
+.blog__post
+  +row
+  @extend %pt-20
+
+.blog__date
+  +span-columns(6)
+  +media($tabletopish)
+    +span-columns(2 of 12)
+
+.blog__date-box
+  @extend .is__background--c-secondary
+  border-radius: .3rem
+  padding: 1rem
+  width: 4.6rem
+  margin-right: 0.5rem
+
+  @extend .is__text--c-white
+  @extend .is__text--centered
+  @extend .is__this--floating--right
+
+
+  &:nth-child(1n)
+    display: block
+
+  //DAY
+  .d
+    font-size: 1.7rem
+    @extend .is__text--heavy
+
+  //MONTH
+  .m
+    font-size: 1.2rem
+    @extend .is__text--regular
+
+  //YEAR
+  .y
+    font-size: 0.9rem
+    @extend .is__text--medium
+.blog__content
+  +span-columns(6)
+  +row
+  +media($tabletopish)
+    +span-columns(10 of 12)
+
+  // the "read-more" truncating link
+  .more-link
+    display: block
+    padding-top: 0.5rem
+    @extend .is__text--c-main
+
+.blog__title
+  +span-columns(6)
+
+  font-size: 1.5rem
+  @extend .is__text--light
+  @extend .is__text--c-black
+  @extend %mb-7
+  margin-top: 0
+
+.blog__image
+  +span-columns(6)
+  +media($tabletopish)
+    +span-columns(5 of 12)
+
+  overflow: hidden
+
+  img
+    border-radius: .3rem
+    max-width: 100%
+    height: 100%
+.blog__content
+.blog__entry
+  font-size: .8rem
+
+.blog__info
+  +span-columns(6)
+  +row
+  @extend %mt-5
+  @extend %mb-5
+
+  border-style: solid
+  @extend .is__border--c-gray-light
+  border-width: 1px 0px
+
+  ul
+    @extend .is__text--unbulleted
+    margin: 0
+    padding: 0
+
+  li
+    @extend .is__this--inline
+    font-size: .8rem
+    @extend .is__text--c-gray
+
+.single
+  .blog__info
+    @extend %mt-1
+    @extend %mb-10
+
+%blog__info--template
+  +span-columns(6)
+  @extend %pb-2
+  @extend %pt-3
+
+.blog__data
+
+.blog__comments
+  @extend %blog__info--template
+  @extend .is__text--c-main
+  +media($tabletish)
+    +span-columns(3 of 12)
+
+.blog__tags
+  @extend %blog__info--template
+  +media($tabletish)
+    +span-columns(5 of 12)
+
+.blog__share
+
+  @extend .is__text--right
+  @extend %blog__info--template
+  +media($tabletish)
+    +span-columns(4 of 12)
+
+.blog__share--item
+  padding-right: 1rem
+
+  //Social Icons only
+  .fa
+    +transform(translateY(0.2rem))
+
+.blog__sidebar
+  +span-columns(6)
+  @extend .is__background--c-main
+
+  +media($laptopish)
+    +span-columns(3 of 12)

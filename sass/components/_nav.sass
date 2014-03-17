@@ -1,0 +1,104 @@
+nav
+  +outer-container
+
+  li
+    @extend .is__this--inline
+    @extend .is__text--c-black
+    @extend .is__this--bordered
+    @extend .is__border--c-secondary
+    @extend h4
+
+    &:hover
+      @extend .is__border--c-black
+
+    &.current_page_item
+      @extend .is__text--c-white
+      @extend .is__border--c-white
+      &:hover
+        @extend .is__border--c-white
+
+      a
+        position: relative
+        @extend %pb-2
+        @extend %pt-2
+
+        &:before
+          content: "▾"
+          position: absolute
+          font-size: 2.8rem
+          width: 100%
+          top: -1.4rem
+
+          @extend .is__text--c-black
+          @extend .is__text--centered
+
+          visibility: hidden
+
+          @include media($laptopish)
+            visibility: visible
+
+.nav__responsive
+  +media($phoneish)
+    display: none
+
+  +media($laptopish)
+    display: flex
+
+.nav__flexbox.j-checked
+
+  ul
+    +media($onlymobileish)
+      display: flex
+      margin-top: 1.1rem
+      width: 100%
+
+
+  li
+    +media($onlymobileish)
+      font-size: 1.2rem
+      text-align: centered
+
+      &:last-child
+        margin-bottom: 1.5rem
+
+
+.nav__flexbox
+  +span-columns(6)
+
+  ul
+    @extend .nav__responsive
+    justify-content: space-between
+    align-items: center
+    +fill-parent
+    flex-flow: column wrap
+
+    @include media($laptopish)
+      flex-flow: row wrap
+
+  li
+    @extend %mt-11
+    @extend %mb-7
+
+.nav__mobile-box
+  @extend .row
+  +media($laptopish)
+    display: none
+
+.nav__mobile-checkbox
+  display: none
+
+.nav__mobile-toggle
+  cursor: pointer
+  font-size: 2rem
+  line-height: 2
+
+.nav__mobile-logo
+  +span-columns(4)
+
+.nav__mobile--title
+  @extend .is__text--size--mega
+
+.nav__mobile--icon
+  +span-columns(2)
+  @extend .is__text--right
+

@@ -1,0 +1,64 @@
+.block__pagecontent
+  @extend .is__background--c-main
+  @extend %pb-20
+  @extend %pt-30
+
+.pagecontent__box
+  +outer-container
+
+.pagecontent__row
+  @extend .row
+
+%pagecontent__grid
+  +span-columns(6)
+
+.pagecontent__image
+  @extend %pagecontent__grid
+  +media($tabletopish)
+    +span-columns(5 of 12)
+
+  img
+    max-width: 100%
+    margin: 0 auto
+
+.pagecontent__content
+  @extend %pagecontent__grid
+  +media($tabletopish)
+    +span-columns(7 of 12)
+
+.pagecontent__title
+  @extend .is__text--regular
+  @extend .is__text--c-main
+  border-bottom: 2px solid #604573
+  @extend %pb-10
+  margin-top: 0
+
+.pagecontent__subheading
+  @extend %mb-5
+  @extend .is__text--c-main
+  font-size: 1.15rem
+  @extend .is__text--uppercase
+
+.pagecontent__text
+  margin: .2rem 0 2.5rem 0
+  +media($tabletopish)
+    font-size: .75rem
+
+//COLORS for light backgrounds
+.block__pagecontent.Purple
+  .pagecontent__title, .pagecontent__subheading
+    @extend .is__text--c-white
+  .pagecontent__title
+    border-color: white
+  .pagecontent__text
+    @extend .is__text--c-white
+
+.block__pagecontent.Gray
+  @extend .is__background--c-gray-light
+
+.block__pagecontent.White
+  @extend .is__background--c-white
+
+
+.block__pagecontent:nth-of-type(2)
+

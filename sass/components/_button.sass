@@ -1,0 +1,30 @@
+%component__button
+  padding: 1.3rem
+  width: 12.5rem
+  height: 3.5rem
+  @extend .is__this--border-radius
+  @extend .is__text--centered
+  @extend .is__text--c-white
+  @extend .is__text--uppercase
+  @extend h4
+
+  &.centered
+    @extend .is__this--centered
+
+  &.left
+    @extend .is__this--floating--left
+
+  &.right
+    @extend .is__this--floating--right
+
+.button--main
+  @extend %component__button
+  @extend .is__background--c-main
+.button--secondary
+  @extend %component__button
+  @extend .is__background--c-secondary
+
+.button--small
+  padding: 0.6rem
+  width: 9.4rem
+  height: inherit

@@ -1,0 +1,20 @@
+.navblog--simple
+  +row
+%navblog--circle
+  $navblog-size: 2.9rem
+  height: $navblog-size
+  width: $navblog-size
+  @extend .is__background--c-gray-light
+  @extend .is__text--c-white
+  border-radius: 10rem
+
+.navblog__previous, .navblog__next
+  +span-columns(3)
+  a
+    @extend %navblog--circle
+    background: url(img/site-wide/arrow.svg) center center no-repeat, #ededed
+    background-size: contain
+    display block
+
+.navblog__previous
+  +transform(rotateZ(180deg))

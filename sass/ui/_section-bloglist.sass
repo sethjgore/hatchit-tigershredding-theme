@@ -1,0 +1,46 @@
+.block__bloglist
+  +outer-container
+  @extend %mb-20
+  @extend %mt-20
+
+.bloglist__row
+  @extend .row
+.bloglist__item
+  +span-columns(4)
+  +shift(1)
+
+  border-bottom: 1px solid rgba(0,0,0,.2)
+  @extend %mb-10
+  @extend %pb-10
+
+  +media($tabletopish)
+    +span-columns(4 of 12)
+
+    //BEGIN RESET
+    border: 0
+    margin: 0
+    //END RESET
+
+    padding: 1rem
+    padding-left: 1.8rem
+
+    border-left: 1px solid rgba(0,0,0,.2)
+
+
+    &:first-child
+      border: none
+.bloglist__title
+  @extend .is__text--c-main
+  @extend .is__text--size--kilo
+  margin-top: 0
+.bloglist__snippet
+
+.bloglist__readmore
+  @extend .is__text--c-secondary
+  @extend .is__text--bold
+  font-size: .85rem
+  &:after
+    content: ">"
+    @extend .is__text--c-secondary
+    font-size: .85rem
+    @extend %pl-5

@@ -1,0 +1,38 @@
+.block__pagetitle
+  background: url('img/site-wide/bg__pagetitle.jpg') no-repeat
+  background-size: cover
+
+.pagetitle__box
+  +outer-container
+
+.pagetitle__title
+  +span-columns(6)
+  @extend %mb-20
+  @extend %mt-20
+
+  &.about
+    margin: 3.5rem inherit
+
+.pagetitle__text
+  @extend .is__text--c-main
+  @extend .is__text--uppercase
+  @extend .is__text--heavy
+  @extend .is__text--centered
+  font-size: 3.1rem
+  margin: 0
+
+.pagetitle__subtitle
+  +span-columns(6 of 6)
+  +media($tabletish)
+    +span-columns(4 of 6)
+    +shift(1)
+  +media($tabletopish)
+    +span-columns(6 of 12)
+    +shift(3)
+
+  @extend .is__text--centered
+
+.pagetitle__image
+  @extend .site-logo--image
+  height: 10rem
+  margin: 0

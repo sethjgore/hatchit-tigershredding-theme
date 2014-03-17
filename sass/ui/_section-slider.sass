@@ -1,0 +1,46 @@
+.block__slider
+.slider__item
+  @extend .is__background--c-white
+.slider__box
+  +outer-container
+  @extend .is__text--centered
+
+.slider__column
+  +span-columns(6)
+  height: 20rem
+.slider__title
+  @extend h1
+  @extend .is__text--uppercase
+  @extend .is__text--bold
+.slider__message
+  @extend .is__text--size--mega
+  @extend .is__text--c-main
+  @extend %pb-10
+  .first
+    @extend .is__text--c-black
+.slider__button
+  @extend .is__this--centered
+  @extend .button--main
+  &.secondary
+    @extend .button--secondary
+
+
+/* Styling for Slider Pagination */
+
+.owl-theme .owl-controls .owl-page span
+  @extend .is__background--c-white
+
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span
+  @extend .is__background--c-secondary
+
+.owl-theme .owl-controls
+  margin-top: 10px
+  text-align: center
+
+  +media($tabletopish)
+    position: absolute
+    +transform(translateY(-3rem))
+    width: 20vw
+    margin-left: 40vw

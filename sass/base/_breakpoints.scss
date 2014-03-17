@@ -1,0 +1,17 @@
+$grid-columns: 6;
+
+$bp-phoneish:        0rem;
+$bp-phabletish:      20rem;
+$bp-tabletish:       30rem;
+$bp-tabletopish:     45rem;
+$bp-laptopish:       58rem;
+$bp-cinemaish:       100rem;
+
+
+$phoneish:    new-breakpoint(min-width $bp-phoneish 6);
+$phabletish:  new-breakpoint(min-width $bp-phabletish 6);
+$tabletish:   new-breakpoint(min-width $bp-tabletish 6);
+$onlymobileish: new-breakpoint(max-width 58rem 6);
+$tabletopish: new-breakpoint(min-width $bp-tabletopish 12);
+$laptopish:   new-breakpoint(min-width $bp-laptopish 12);
+$cinemaish:   new-breakpoint(min-width $bp-cinemaish 12);

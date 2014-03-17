@@ -1,0 +1,28 @@
+.block__contact
+  @extend .is__background--c-secondary
+  @extend .component__zigzag
+  
+.contact__box
+  +outer-container
+  @extend %pt-20
+  @extend %pb-20
+.contact__row
+  @extend .row
+.contact__column
+  +span-columns(6)
+
+%contact--text
+  @extend .is__text--centered
+  @extend .is__text--c-white
+  @extend .is__text--uppercase
+  @extend .is__text--bold
+  margin: 0
+
+.contact__message
+  @extend %contact--text
+  @extend .is__text--size--18ish
+  @extend %pb-6
+
+.contact__number
+  @extend %contact--text
+  @extend .is__text--size--giga

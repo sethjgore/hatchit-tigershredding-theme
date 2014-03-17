@@ -1,0 +1,31 @@
+.withlogo__link
+  display: none
+
+.withlogo
+  .withlogo__link
+    display: block
+
+  .withlogo__placeholder
+    position: relative
+
+    &:after
+      content: ""
+      position: absolute
+      display: block
+      width: 8rem
+      height: 7rem
+      background: url("img/site-wide/site-logo.png") no-repeat
+      z-index: 10
+      background-size: contain
+      top: -0.8rem
+
+  .companyinfo__text
+    .left
+      padding-right: 2rem
+    .right
+      padding-left: 2rem
+
+  .nav__flexbox
+    ul
+      width: 85%
+      float: right

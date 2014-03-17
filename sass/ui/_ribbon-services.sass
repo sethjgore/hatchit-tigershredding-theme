@@ -1,0 +1,52 @@
+.block__services--ribbon
+  +outer-container
+  display: none
+  +media($tabletopish)
+    display: block
+    position: relative
+    z-index: 10
+
+
+.services--row
+  @extend .row
+
+
+.services__logo-column
+  +span-columns(6)
+  +media($tabletopish)
+    +span-columns(4 of 12)
+
+
+.services__logo-box
+  @extend .is__background--c-black
+  @extend .is__this--border-radius
+  width: 10rem
+  padding: 0.7rem 0
+  margin: -0.7rem auto -0.7rem
+
+.services__logo--image
+  @extend .site-logo--image--dark
+  background-position: center center
+  height: 5.6rem
+  background-size: contain
+
+.services--column
+  +span-columns(6)
+  @extend %pt-8
+
+  +media($tabletopish)
+    +span-columns(4 of 12)
+
+  ul
+    +fill-parent
+    display: flex
+    justify-content: space-around
+
+  li
+    @extend .is__this--inline
+    @extend h4
+    @extend .is__text--c-white
+    @extend .is__text--centered
+
+    &:last-child
+      @extend %pl-20
