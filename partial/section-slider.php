@@ -3,7 +3,7 @@
         <div class="slider__box">
           <div class="slider__column">
             <div class="slider__title">Tiger Shredding</div>
-            <div class="slider__message.first">Tiger Shredding provides secure, high volume shredding services for a wide variety of industries.</div>
+            <div class="slider__message first">Tiger Shredding provides secure, high volume shredding services for a wide variety of industries.</div>
             <div class="slider__button">SHRED</div>
           </div>
         </div>

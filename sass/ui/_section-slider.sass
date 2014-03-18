@@ -3,26 +3,50 @@
   @extend .is__background--c-white
 .slider__box
   +outer-container
+  @extend .row
   @extend .is__text--centered
 
 .slider__column
   +span-columns(6)
-  height: 20rem
+  height: 27rem
+  padding-top: 3.3rem
+
 .slider__title
   @extend h1
   @extend .is__text--uppercase
-  @extend .is__text--bold
+  @extend .is__text--heavy
+
 .slider__message
   @extend .is__text--size--mega
   @extend .is__text--c-main
-  @extend %pb-10
+  @extend %pb-20
+
   .first
     @extend .is__text--c-black
+
 .slider__button
   @extend .is__this--centered
   @extend .button--main
   &.secondary
     @extend .button--secondary
+
+// Custom Options via Wordpress CP
+// @Params: Left | Right | (Center)
+// @does: Aligns the internal text/button
+.slider__column
+  &.Left
+    @extend .is__text--left
+    .slider__button
+      @extend .is__this--floating--left
+  &.Right
+    @extend .is__text--right
+
+    .slider__button
+      @extend .is__this--floating--right
+  &.Center
+    @extend .is__text--centered
+
+
 
 
 /* Styling for Slider Pagination */

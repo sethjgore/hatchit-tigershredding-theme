@@ -2172,24 +2172,24 @@ th {
     clear: both; }
 
 /* line 3, base/_grid.sass */
-.row, .nav__mobile-box, .footer__row, .slogan__row, .badges__row, .bloglist__row, .shredprocess__row, .pagecontent__row, .blog__row, .services--row, .contact__row, .testmonial__row, .companyinfo__row {
+.row, .nav__mobile-box, .footer__row, .slogan__row, .badges__row, .bloglist__row, .slider__box, .shredprocess__row, .pagecontent__row, .blog__row, .services--row, .contact__row, .testmonial__row, .companyinfo__row {
   *zoom: 1;
   display: block;
   padding: 0 2rem; }
   /* line 17, bourbon/addons/_clearfix.scss */
-  .row:before, .nav__mobile-box:before, .footer__row:before, .slogan__row:before, .badges__row:before, .bloglist__row:before, .shredprocess__row:before, .pagecontent__row:before, .blog__row:before, .services--row:before, .contact__row:before, .testmonial__row:before, .companyinfo__row:before, .row:after, .nav__mobile-box:after, .footer__row:after, .slogan__row:after, .badges__row:after, .bloglist__row:after, .shredprocess__row:after, .pagecontent__row:after, .blog__row:after, .services--row:after, .contact__row:after, .testmonial__row:after, .companyinfo__row:after {
+  .row:before, .nav__mobile-box:before, .footer__row:before, .slogan__row:before, .badges__row:before, .bloglist__row:before, .slider__box:before, .shredprocess__row:before, .pagecontent__row:before, .blog__row:before, .services--row:before, .contact__row:before, .testmonial__row:before, .companyinfo__row:before, .row:after, .nav__mobile-box:after, .footer__row:after, .slogan__row:after, .badges__row:after, .bloglist__row:after, .slider__box:after, .shredprocess__row:after, .pagecontent__row:after, .blog__row:after, .services--row:after, .contact__row:after, .testmonial__row:after, .companyinfo__row:after {
     content: " ";
     display: table; }
   /* line 23, bourbon/addons/_clearfix.scss */
-  .row:after, .nav__mobile-box:after, .footer__row:after, .slogan__row:after, .badges__row:after, .bloglist__row:after, .shredprocess__row:after, .pagecontent__row:after, .blog__row:after, .services--row:after, .contact__row:after, .testmonial__row:after, .companyinfo__row:after {
+  .row:after, .nav__mobile-box:after, .footer__row:after, .slogan__row:after, .badges__row:after, .bloglist__row:after, .slider__box:after, .shredprocess__row:after, .pagecontent__row:after, .blog__row:after, .services--row:after, .contact__row:after, .testmonial__row:after, .companyinfo__row:after {
     clear: both; }
   @media screen and (min-width: tabletopish) {
     /* line 3, base/_grid.sass */
-    .row, .nav__mobile-box, .footer__row, .slogan__row, .badges__row, .bloglist__row, .shredprocess__row, .pagecontent__row, .blog__row, .services--row, .contact__row, .testmonial__row, .companyinfo__row {
+    .row, .nav__mobile-box, .footer__row, .slogan__row, .badges__row, .bloglist__row, .slider__box, .shredprocess__row, .pagecontent__row, .blog__row, .services--row, .contact__row, .testmonial__row, .companyinfo__row {
       padding: 0 1rem; } }
   @media screen and (min-width: laptopish) {
     /* line 3, base/_grid.sass */
-    .row, .nav__mobile-box, .footer__row, .slogan__row, .badges__row, .bloglist__row, .shredprocess__row, .pagecontent__row, .blog__row, .services--row, .contact__row, .testmonial__row, .companyinfo__row {
+    .row, .nav__mobile-box, .footer__row, .slogan__row, .badges__row, .bloglist__row, .slider__box, .shredprocess__row, .pagecontent__row, .blog__row, .services--row, .contact__row, .testmonial__row, .companyinfo__row {
       padding: 0; } }
 
 /* line 14, base/_grid.sass */
@@ -2367,7 +2367,7 @@ nav li.current_page_item a, .blog__comments, .blog__tags, .blog__share {
   padding-bottom: 0.6rem; }
 
 /* line 35, base/_grid.sass */
-.bloglist__item, .slider__message, .pagecontent__title {
+.bloglist__item, .pagecontent__title {
   padding-bottom: 1rem; }
 
 /* line 35, base/_grid.sass */
@@ -2375,7 +2375,7 @@ nav li.current_page_item a, .blog__comments, .blog__tags, .blog__share {
   padding-bottom: 1.2rem; }
 
 /* line 35, base/_grid.sass */
-.footer__row, .slogan__box, .block__badges, .block__pagecontent, .block__about, .contact__box {
+.footer__row, .slogan__box, .block__badges, .slider__message, .block__pagecontent, .block__about, .contact__box {
   padding-bottom: 2rem; }
 
 /* line 40, base/_grid.sass */
@@ -2407,7 +2407,7 @@ nav li.current_page_item a {
   padding-left: 2rem; }
 
 /* line 1, base/is/_is__text.sass */
-.is__text--heavy, .pagetitle__text, .blog__date-box .d {
+.is__text--heavy, .slider__title, .pagetitle__text, .blog__date-box .d {
   font-weight: 800; }
 
 /* line 4, base/is/_is__text.sass */
@@ -2432,15 +2432,15 @@ nav li.current_page_item a {
   font-style: italic; }
 
 /* line 20, base/is/_is__text.sass */
-.is__text--centered, blockquote, caption, nav li.current_page_item a:before, .button--main, .form-submit #submit, .slider__button, .button--secondary, .slider__button.secondary, .footer__social-box ul, .badges__company--image, .badges__company--message, .slider__box, .pagetitle__text, .pagetitle__subtitle, .shredprocess__item, .about__company-box, .blog__date-box, .services--column li, .contact__message, .contact__number, .testmonial__message--customer {
+.is__text--centered, blockquote, caption, nav li.current_page_item a:before, .button--main, .form-submit #submit, .slider__button, .button--secondary, .slider__button.secondary, .footer__social-box ul, .badges__company--image, .badges__company--message, .slider__box, .slider__column.Center, .pagetitle__text, .pagetitle__subtitle, .shredprocess__item, .about__company-box, .blog__date-box, .services--column li, .contact__message, .contact__number, .testmonial__message--customer {
   text-align: center; }
 
 /* line 23, base/is/_is__text.sass */
-.is__text--left {
+.is__text--left, .slider__column.Left {
   text-align: left; }
 
 /* line 26, base/is/_is__text.sass */
-.is__text--right, .nav__mobile--icon, .footer__list, .blog__share {
+.is__text--right, .nav__mobile--icon, .footer__list, .slider__column.Right, .blog__share {
   text-align: right; }
 
 /* line 29, base/is/_is__text.sass */
@@ -2472,11 +2472,11 @@ nav li.current_page_item a {
   font-size: 1.1rem; }
 
 /* line 12, base/is/_is__this.sass */
-.is__this--floating--left, .left.button--main, .form-submit .left#submit, .left.slider__button, .left.button--secondary {
+.is__this--floating--left, .left.button--main, .form-submit .left#submit, .left.slider__button, .left.button--secondary, .slider__column.Left .slider__button {
   float: left; }
 
 /* line 16, base/is/_is__this.sass */
-.is__this--floating--right, .right.button--main, .form-submit .right#submit, .right.slider__button, .right.button--secondary, .slogan__video, .blog__date-box {
+.is__this--floating--right, .right.button--main, .form-submit .right#submit, .right.slider__button, .right.button--secondary, .slogan__video, .slider__column.Right .slider__button, .blog__date-box {
   float: right; }
 
 /* line 19, base/is/_is__this.sass */
@@ -3470,24 +3470,25 @@ body {
   .slider__box:after {
     clear: both; }
 
-/* line 8, ui/_section-slider.sass */
+/* line 9, ui/_section-slider.sass */
 .slider__column {
   float: left;
   display: block;
   margin-right: 4.82916%;
   width: 100%;
-  height: 20rem; }
+  height: 27rem;
+  padding-top: 3.3rem; }
   /* line 40, neat/grid/_span-columns.scss */
   .slider__column:last-child {
     margin-right: 0; }
 
 /* Styling for Slider Pagination */
-/* line 38, ui/_section-slider.sass */
+/* line 62, ui/_section-slider.sass */
 .owl-theme .owl-controls {
   margin-top: 10px;
   text-align: center; }
   @media screen and (min-width: 45rem) {
-    /* line 38, ui/_section-slider.sass */
+    /* line 62, ui/_section-slider.sass */
     .owl-theme .owl-controls {
       position: absolute;
       -webkit-transform: translateY(-3rem);

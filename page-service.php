@@ -47,3 +47,18 @@ Template Name: Page -- Service
       <?php endwhile; ?>
     <?php endif; ?>
 <?php get_footer(); ?>
+
+
+ <?php if(get_field('front_slider')): ?>
+    <?php while(has sub_field('front_slider')): ?>
+      <div class="slider__item <?php the_sub_field('text_position'); ?>" style="background:url(<?php the_sub_field('image'); ?>) center center; background-size: cover;">
+         <div class="slider__box">
+          <div class="slider__column">
+            <div class="slider__title"><?php the_sub_field('title'); ?></div>
+            <div class="slider__message"><?php the_sub_field('message'); ?></div>
+            <a href="<?php the_sub_field('which_page'); ?>"><div class="slider__button secondary"><?php the_sub_field('button'); ?></div></a>
+          </div>
+        </div>
+      </div>
+    <?php endwhile; ?>
+  <?php endif; ?>
