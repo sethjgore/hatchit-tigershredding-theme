@@ -17,12 +17,12 @@
     <div class="slider__item" style="background: url('<?php the_sub_field('image'); ?>') center center; background-size: cover;">
       <div class="slider__box">
         <div class="slider__column <?php the_sub_field('text_position'); ?>">
-          <div class="slider__title">
+          <div class="slider__title <?php the_sub_field('title_color'); ?>">
           <img src="<?php the_sub_field('title_image'); ?>">
           <?php the_sub_field('title'); ?></div>
           <div class="slider__message first"><?php the_sub_field('message'); ?></div>
 
-            <div class="slider__button">
+            <div class="slider__button <?php the_sub_field('button_color'); ?>">
               <a href="<?php the_sub_field('which_page'); ?>"><?php the_sub_field('button'); ?></a>
             </div>
         </div>

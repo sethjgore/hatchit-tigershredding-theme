@@ -2407,7 +2407,7 @@ nav li.current_page_item a {
   padding-left: 2rem; }
 
 /* line 1, base/is/_is__text.sass */
-.is__text--heavy, .slider__title, .pagetitle__text, .blog__date-box .d {
+.is__text--heavy, .pagetitle__text, .blog__date-box .d {
   font-weight: 800; }
 
 /* line 4, base/is/_is__text.sass */
@@ -3560,6 +3560,10 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .slider__column:last-child {
     margin-right: 0; }
+
+/* line 14, ui/_section-slider.sass */
+.slider__title {
+  font-weight: 800 !important; }
 
 /* line 50, ui/_section-slider.sass */
 .slider__column.first-slide {

@@ -3,7 +3,7 @@
     <div class="row nav__mobile-box">
       <div class="nav__mobile-logo">
         <h1 class="nav__mobile--title">
-          DIXIE PAPER
+          TIGER SHREDDING
         </h1>
       </div>
       <div class="nav__mobile--icon">
