@@ -1,4 +1,4 @@
-<footer>
+<footer class="zz_black">
   <div class="footer__box">
     <div class="footer__row">
       <div class="footer__contact">

@@ -13,6 +13,11 @@ function blankslate_setup()
   load_theme_textdomain( 'blankslate', get_template_directory() . '/languages' );
   add_theme_support( 'automatic-feed-links' );
   add_theme_support( 'post-thumbnails' );
+
+  add_theme_support( 'infinite-scroll', array(
+    'container'    => 'blog__posts',
+) );
+
   global $content_width;
   if ( ! isset( $content_width ) ) $content_width = 640;
   register_nav_menus(

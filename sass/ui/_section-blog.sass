@@ -4,6 +4,7 @@
   +outer-container
 .blog__row
   @extend .row
+  padding-bottom: 4rem
 
 .blog__posts
   +span-columns(6)
@@ -143,7 +144,18 @@
 
 .blog__sidebar
   +span-columns(6)
-  @extend .is__background--c-main
-
   +media($laptopish)
     +span-columns(3 of 12)
+
+
+// Infinite Scrolling
+// Jetpack plugin with WP
+
+#infinite-footer
+  display: none
+/* Hides navigation links and site footer when infinite scroll is active */
+.infinite-scroll #navigation, .infinite-scroll.neverending #footer
+  display: none
+/* Shows the footer again in case all posts have been loaded */
+.infinity-end.neverending #footer
+  display: block

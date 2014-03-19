@@ -1,4 +1,4 @@
-<div class="block__contact zz_secondary">
+<div class="block__contact zz_secondary zz_d">
   <div class="contact__box">
     <div class="contact__row">
       <div class="contact__column">

@@ -1,20 +1,36 @@
 .navblog--simple
   +row
-%navblog--circle
-  $navblog-size: 2.9rem
-  height: $navblog-size
-  width: $navblog-size
-  @extend .is__background--c-gray-light
-  @extend .is__text--c-white
-  border-radius: 10rem
-
-.navblog__previous, .navblog__next
+.navblog__previous
   +span-columns(3)
   a
-    @extend %navblog--circle
-    background: url(img/site-wide/arrow.svg) center center no-repeat, #ededed
-    background-size: contain
-    display block
+    font-size: 1.2rem
+    @extend .is__text--c-black
+    @extend .is__text--light
+    &:before
+      +transform(translateY(1rem) rotateZ(180deg))
+      background: url(img/site-wide/arrow.svg) center center no-repeat
+      background-size: contain
+      display: inline-block
+      height: 3rem
+      width: 3rem
+      content: ""
+      padding: 0 1rem
 
-.navblog__previous
-  +transform(rotateZ(180deg))
+.navblog__next
+  +span-columns(3)
+  a
+    float: right
+    font-size: 1.2rem
+    @extend .is__text--c-black
+    @extend .is__text--light
+
+    &:after
+      +transform(translateY(1rem))
+      background: url(img/site-wide/arrow.svg) center center no-repeat
+      background-size: contain
+      display: inline-block
+      height: 3rem
+      width: 3rem
+      content: ""
+      padding: 0 1rem
+

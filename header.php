@@ -26,4 +26,3 @@
     <div class="traffic-light"></div>
       <?php get_template_part('partial/ribbon', 'companyinfo'); ?>
       <?php get_template_part('partial/nav', 'main'); ?>
-    <div id="container">

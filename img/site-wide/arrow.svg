@@ -2,7 +2,9 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="13.686px" height="27.209px" viewBox="0 0 13.686 27.209" enable-background="new 0 0 13.686 27.209" xml:space="preserve">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0.058,26.237l12.713-12.631L0.058,0.973L0,0l13.686,13.605L0,27.209L0.058,26.237
-	z"/>
+	 width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#F2F2F2" d="M24.735,0c-13.531,0-24.5,10.969-24.5,24.5
+	c0,13.53,10.969,24.5,24.5,24.5s24.5-10.97,24.5-24.5C49.235,10.969,38.267,0,24.735,0z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#C8CCCE" d="M17.757,37.495L30.832,24.5L17.757,11.505l-0.061-1L31.773,24.5
+	L17.696,38.495L17.757,37.495z"/>
 </svg>
