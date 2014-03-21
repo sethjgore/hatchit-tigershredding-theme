@@ -8,8 +8,11 @@
         <ul class="footer__contact--list">
           <li><?php the_field('address_first_line', 'options'); ?></li>
           <li><?php the_field('address_second_line', 'options'); ?></li>
-          <li><?php the_field('phone_number', 'options'); ?></li>
+          <li><a href="tel:<?php the_field('phone_number', 'options'); ?>"><?php the_field('phone_number', 'options'); ?></a></li>
         </ul>
+        <small class="footer__contact--heading">
+          <a href="mailto:jobs@tigershreddingla.com">JOBS</a>
+        </small>
       </div>
       <div class="footer__logo-box">
       <div class="footer__logo">

@@ -19,6 +19,10 @@ module.exports = {
     files: ['sass/**/**/*.{sass, scss}'],
     tasks : ['sass:dist', 'concat']
   },
+  autoprefixer: {
+    files: ['sass/style-unprefixed.css'],
+    tasks: ['autoprefixer']
+  },
   coffee : {
     files: ['_themes/**/js/*.coffee'],
     tasks: ['coffee']

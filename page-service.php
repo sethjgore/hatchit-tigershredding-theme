@@ -6,7 +6,7 @@ Template Name: Page -- Service
 
   <?php get_template_part( 'partial/section','pagetitle'); ?>
 
-  <?php get_template_part( 'partial/section','slogan'); ?>
+  <!--<?php get_template_part( 'partial/section','slogan'); ?>-->
 
     <?php
     if( get_field('section')): ?>

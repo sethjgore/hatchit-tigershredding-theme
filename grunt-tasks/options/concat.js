@@ -15,6 +15,6 @@ module.exports = {
           'sass/plugins/owl.theme.css',
           'sass/zigzag.css'
           ],
-    dest: 'style.css'
+    dest: 'sass/style-unprefixed.css'
   }
 }

@@ -12,7 +12,7 @@ module.exports = {
       mangle: false
     },
     files: {
-      'js/script.js' : ['bower_components/jquery/dist/jquery.js', 'bower_components/owlcarousel/owl-carousel/owl.carousel.js' , 'js/tigershredding.js']
+      'js/script.js' : ['bower_components/jquery/dist/jquery.js', 'bower_components/owlcarousel/owl-carousel/owl.carousel.js' , 'js/parser.js', 'js/tokenizer.js', 'js/vminpoly.js', 'js/tigershredding.js']
     }
   }
 }

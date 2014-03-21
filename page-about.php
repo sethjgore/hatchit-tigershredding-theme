@@ -123,6 +123,16 @@ Template Name: Page -- About
               </div>
               <div class="pagecontent__image">
                 <img src="<?php the_sub_field('image'); ?>">
+                <?php
+
+                  $location = get_sub_field('link_to_map');
+
+                  if( !empty($location) ):
+                  ?>
+                  <div class="acf-map">
+                    <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+                  </div>
+                <?php endif; ?>
               </div>
             </div>
           </div>

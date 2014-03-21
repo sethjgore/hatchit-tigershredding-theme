@@ -10,7 +10,7 @@ Template Name: Page -- Front
 
   <?php get_template_part( 'partial/section','badges'); ?>
 
-  <?php get_template_part( 'partial/section','slogan'); ?>
+  <!--<?php get_template_part( 'partial/section','slogan'); ?>-->
 
   <?php get_template_part( 'partial/ribbon','contact'); ?>
 

@@ -3,8 +3,8 @@
     <div class="services--row" role="company-services">
       <div class="services--column">
         <ul>
-          <li>one time <br> purge</li>
-          <li>residential & <br> walk-ins</li>
+          <a href="<?php bloginfo('url'); ?>/one-time-purge/"><li>one time <br> purge</li></a>
+          <a href="<?php bloginfo('url'); ?>/residential-walk-ins/"><li>residential & <br> walk-ins</li></a>
         </ul>
       </div>
       <div class="services__logo-column">
@@ -14,8 +14,8 @@
       </div>
       <div class="services--column">
         <ul>
-          <li>customized <br> plans</li>
-          <li>hardware <br> destruction</li>
+          <a href="<?php bloginfo('url'); ?>/customized-plans/"><li>customized <br> plans</li></a>
+           <a href="<?php bloginfo('url'); ?>/harddrive-destruction/"><li>hard drive <br> destruction</li></a>
         </ul>
       </div>
     </div>

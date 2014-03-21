@@ -1,6 +1,3 @@
-$zigzag-bg: #333538;
-$body-bg: #f3f3f3;
-
 .block__contact{
   @extend .is__background--c-secondary;
 }
@@ -14,11 +11,19 @@ $body-bg: #f3f3f3;
 }
 .contact__column{
   @include span-columns(6);
+  @include media($tabletopish){
+    @include span-columns(6 of 12);
+  }
+
+  &.map__neighbor{
+    @include media($tabletopish){
+    padding-top: 8.6rem;
+    }
+  }
 }
 
 %contact--text{
   @extend .is__text--centered;
-  @extend .is__text--c-white;
   @extend .is__text--uppercase;
   @extend .is__text--bold;
   margin: 0;
@@ -26,10 +31,20 @@ $body-bg: #f3f3f3;
 
 .contact__message{
   @extend %contact--text;
+  @extend .is__text--c-white;
   @extend .is__text--size--18ish;
   @extend %pb-6;
 }
 .contact__number{
   @extend %contact--text;
+  @extend .is__text--c-white;
   @extend .is__text--size--giga;
+  @extend %pb-3
+}
+
+.contact__email{
+  @extend %contact--text;
+  @extend .is__text--size--18ish;
+  @extend %pb-6;
+  @extend .is__text--c-main;
 }
