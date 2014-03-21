@@ -17,10 +17,15 @@
 
   &.map__neighbor{
     @include media($tabletopish){
-    padding-top: 8.6rem;
+    padding-top: 5.8rem;
     }
   }
+
+  .acf-map{
+    height: 300px;
+  }
 }
+
 
 %contact--text{
   @extend .is__text--centered;
