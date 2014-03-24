@@ -26,6 +26,9 @@
             <li><a href="" title="Linked In">
                <i class="fa fa-linkedin is__text--c-secondary is__text--centered"></i>
             </a></li>
+            <li><a href="" title="Facebook">
+               <i class="fa fa-facebook is__text--c-secondary is__text--centered"></i>
+            </a></li>
           </ul>
         </div>
       </div>
