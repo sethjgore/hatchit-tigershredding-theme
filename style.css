@@ -1604,9 +1604,7 @@ body {
   .footer__social-box a {
     display: block;
     width: 3rem;
-    height: 3rem; }
-  /* line 71, ui/_footer.sass */
-  .footer__social-box i {
+    height: 3rem;
     position: relative; }
 
 /* line 3, ui/_site-logo.sass */

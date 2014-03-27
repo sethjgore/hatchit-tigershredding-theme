@@ -20,14 +20,17 @@
         </div>
         <div role="social-links" class="footer__social-box fa-stack fa-lg">
           <ul>
-            <li><a href="" title="Twitter">
-               <i class="fa fa-twitter is__text--c-secondary is__text--centered"></i>
+            <li><a class="fa fa-stack" href="<?php the_field('twitter','options'); ?>" title="Twitter">
+               <i class="fa fa-square fa-stack-2x is__text--c-black"></i>
+               <i class="fa fa-twitter fa-stack-1x is__text--c-secondary is__text--centered"></i>
             </a></li>
-            <li><a href="" title="Linked In">
-               <i class="fa fa-linkedin is__text--c-secondary is__text--centered"></i>
+            <li><a class="fa fa-stack" href="<?php the_field('linkedin','options'); ?>" title="Linked In">
+               <i class="fa fa-square fa-stack-2x is__text--c-black"></i>
+               <i class="fa fa-linkedin fa-stack-1x is__text--c-secondary is__text--centered"></i>
             </a></li>
-            <li><a href="" title="Facebook">
-               <i class="fa fa-facebook is__text--c-secondary is__text--centered"></i>
+            <li><a class="fa fa-stack" href="<?php the_field('facebook','options'); ?>" title="Facebook">
+              <i class="fa fa-square fa-stack-2x is__text--c-facebook"></i>
+              <i class="fa fa-facebook fa-stack-1x is__text--c-white is__text--centered"></i>
             </a></li>
           </ul>
         </div>
