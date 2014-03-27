@@ -4,7 +4,7 @@
       <div class="companyinfo__flexbox">
         <ul>
           <a class="withlogo__link" href=""><li class="withlogo__placeholder"></li></a>
-          <li class="companyinfo__text">
+          <li class="companyinfo__text companyinfo__first">
             <p class="left"><a href="tel:<?php the_field('phone_number', 'options'); ?>"><?php the_field('phone_number', 'option'); ?></a></p>
             <p class="left"><a href="<?php the_field('google-map', 'option'); ?>"><?php the_field('address_first_line', 'option'); ?> |
             <?php the_field('address_second_line', 'option'); ?></a></p>

@@ -1,15 +1,15 @@
 <section class="is__background--c-secondary">
   <nav role="navigation">
-    <div class="row nav__mobile-box">
+    <div class="row nav__mobile-box" id="nav-toggle-bar">
       <div class="nav__mobile-logo">
         <h1 class="nav__mobile--title">
           TIGER SHREDDING
         </h1>
       </div>
       <div class="nav__mobile--icon">
-      <input type="checkbox" class="nav__mobile-checkbox" id="nav-toggle">
-      <label class="nav__mobile-toggle fa fa-bars is__text--c-main" for="nav-toggle" onclick>
-      </label>
+        <input type="checkbox" class="nav__mobile-checkbox" id="nav-toggle">
+        <label class="nav__mobile-toggle fa fa-bars is__text--c-main" for="nav-toggle" onclick>
+        </label>
       </div>
     </div>
     <div class="row">

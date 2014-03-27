@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width" />
 
     <title><?php wp_title( ' | ', true, 'right' ); ?></title>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+      href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
-
+    <!--[if IE]>
+      <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/sass/shame/ie.css" />
+    <![endif]-->
 
 
     <?php get_template_part('typekit') //loads the typekit fonts embed scripts ?>

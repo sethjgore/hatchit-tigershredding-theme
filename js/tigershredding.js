@@ -23,4 +23,7 @@ $(document).ready(function() {
     $(".nav__flexbox").toggleClass("j-checked");
   });
 
+  $("#nav-toggle-bar").click(function(){
+    $(".nav__flexbox").toggleClass("j-checked");
+  });
 });
