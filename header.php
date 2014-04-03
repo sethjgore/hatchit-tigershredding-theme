@@ -12,6 +12,11 @@
       <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/sass/shame/ie.css" />
     <![endif]-->
 
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/sass/shame/ie8.css" />
+    <![endif]-->
+
 
     <?php get_template_part('typekit') //loads the typekit fonts embed scripts ?>
 

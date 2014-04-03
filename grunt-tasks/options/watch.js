@@ -21,7 +21,7 @@ module.exports = {
   },
   autoprefixer: {
     files: ['sass/style-unprefixed.css'],
-    tasks: ['autoprefixer']
+    tasks: ['autoprefixer','pixrem']
   },
   coffee : {
     files: ['_themes/**/js/*.coffee'],
