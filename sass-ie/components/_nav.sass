@@ -1,0 +1,92 @@
+nav
+  +outer-container
+
+  ul
+    margin: 0
+
+  li
+    @extend .is__this--inline
+    @extend .is__text--c-black
+    @extend .is__this--bordered
+    @extend .is__border--c-secondary
+    @extend h4
+    margin-right: 20px
+
+    &:hover
+      @extend .is__border--c-black
+
+    &.current_page_item
+      @extend .is__text--c-white
+      @extend .is__border--c-white
+      &:hover
+        @extend .is__border--c-white
+
+      a
+        @extend %pb-2
+        @extend %pt-2
+
+.nav__responsive
+
+.nav__flexbox.j-checked
+.nav__flexbox
+  +span-columns(12)
+
+  ul
+    justify-content: space-between
+    align-items: center
+    +fill-parent
+    flex-flow: row wrap
+
+  li
+    @extend %mt-11
+    @extend %mb-7
+
+.nav__mobile-box
+  @extend .row
+  display: none
+
+.nav__mobile-checkbox
+  display: none
+
+.nav__mobile-toggle
+  cursor: pointer
+  font-size: 2rem
+  line-height: 2
+
+.nav__mobile-logo
+  +span-columns(8 of 12)
+
+.nav__mobile--title
+  @extend .is__text--size--mega
+
+.nav__mobile--icon
+  +span-columns(3 of 12)
+  @extend .is__text--right
+
+
+
+// Company Information Banner
+.companyinfo__flexbox
+  ul
+    display: block
+    +row
+
+  li
+    +span-columns(6 of 12)
+
+.withlogo
+  .withlogo__placeholder
+    &:after
+      top: 0rem
+  .companyinfo__first
+    +shift(2)
+
+  .companyinfo__flexbox
+    li
+      +span-columns(5 of 12)
+
+  .companyinfo__text
+  .left
+    padding-right: 1.5rem
+  .right
+    padding-left: 1.5rem

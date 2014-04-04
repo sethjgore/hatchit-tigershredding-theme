@@ -42,7 +42,7 @@ Template Name: Page -- About
             <div class="pagecontent__row">
 
               <div class="pagecontent__image">
-                <img src="<?php the_sub_field('image'); ?>">
+                <img src="<?php the_sub_field('image'); ?>" onerror="this.parentNode.removeChild(this)">
               </div>
 
               <div class="pagecontent__content">
@@ -122,7 +122,7 @@ Template Name: Page -- About
                 </p>
               </div>
               <div class="pagecontent__image">
-                <img src="<?php the_sub_field('image'); ?>">
+                <img src="<?php the_sub_field('image'); ?>" onerror="this.parentNode.removeChild(this)">
                 <?php
 
                   $location = get_sub_field('link_to_map');

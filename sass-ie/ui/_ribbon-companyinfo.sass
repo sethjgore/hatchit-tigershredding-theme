@@ -1,0 +1,39 @@
+.block__companyinfo
+  @extend .is__background--c-black
+  display: block
+
+.companyinfo__box
+  +outer-container
+
+.companyinfo__row
+  @extend .row
+.companyinfo__logoholder
+  display: none
+
+.companyinfo__flexbox
+  +span-columns(12)
+
+  ul
+    display: flex
+    justify-content: space-between
+    align-items: center
+    +fill-parent
+    padding: 0
+    margin: 0
+    flex-flow: row wrap
+
+  li
+    @extend .is__text--unbulleted
+
+.companyinfo__text
+  p,a
+    @extend .is__this--inline
+    @extend .is__text--c-white
+    font-size: 0.69796rem
+    flex: 1
+
+  .left
+    padding-right: 2.5rem
+  .right
+    padding-left: 2.5rem
+

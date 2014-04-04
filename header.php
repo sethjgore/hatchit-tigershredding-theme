@@ -7,8 +7,13 @@
     <title><?php wp_title( ' | ', true, 'right' ); ?></title>
     <link rel="stylesheet" type="text/css"
       href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
-    <!--[if IE]>
+
+     <!--[if !IE]><!-->
+      <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+     <!--<![endif]-->
+
+    <!--[if IE9]>
+      <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
       <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/sass/shame/ie.css" />
     <![endif]-->
 
@@ -16,6 +21,7 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/sass/shame/ie8.css" />
     <![endif]-->
+
 
 
     <?php get_template_part('typekit') //loads the typekit fonts embed scripts ?>
@@ -26,11 +32,6 @@
   <body class="<?php if( is_front_page() || is_home() || is_single()){ echo ''; } else { echo 'withlogo'; } ?>" <?php body_class(); ?> >
 
     <header>
-      <!--<div class="col-6">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'blankslate' ); ?>" rel="home">
-          <img class="site-logo--image"></img>
-        </a>
-      </div>-->
     </header>
       <?php get_template_part('partial/ribbon', 'companyinfo'); ?>
       <?php get_template_part('partial/nav', 'main'); ?>

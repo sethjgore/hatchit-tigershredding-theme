@@ -1,0 +1,31 @@
+.withlogo__link
+  display: none
+
+.withlogo
+  .withlogo__link
+    display: block
+
+  .withlogo__placeholder
+    position: relative
+
+    &:after
+      content: ""
+      position: absolute
+      display: block
+      width: 150px
+      height: 150px
+      background: url("../../img/site-wide/site-logo-ie-150.png") no-repeat
+      z-index: 10
+      background-size: 150px 150px
+      top: -0.8rem
+
+  .companyinfo__text
+    .left
+      padding-right: 2rem
+    .right
+      padding-left: 2rem
+
+  .nav__flexbox
+    ul
+      width: 85%
+      float: right

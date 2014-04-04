@@ -208,7 +208,6 @@ figure {
 /* line 341, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -327,7 +326,6 @@ input {
 /* line 476, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
@@ -354,7 +352,6 @@ input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -422,7 +419,6 @@ th {
 
 /* line 2, neat/grid/_grid.scss */
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -911,11 +907,11 @@ nav li.current_page_item a {
 html, body {
   line-height: 1.61em;
   font-size: 85%; }
-  @media screen and (min-width: 30rem) {
+  @media screen and (min-width: 528px) {
     /* line 3, base/_type--sizing.sass */
     html, body {
       font-size: 90%; } }
-  @media screen and (min-width: 58rem) {
+  @media screen and (min-width: 1020px) {
     /* line 3, base/_type--sizing.sass */
     html, body {
       font-size: 110%; } }
@@ -1028,7 +1024,6 @@ input, textarea {
     height: 7rem;
     background: url("img/site-wide/site-logo.png") no-repeat;
     z-index: 10;
-    -webkit-background-size: contain;
     background-size: contain;
     top: -0.8rem; }
 /* line 23, components/_nav-withlogo.sass */
@@ -1069,16 +1064,16 @@ nav {
       width: 100%;
       top: -1.4rem;
       visibility: hidden; }
-      @media screen and (min-width: 58rem) {
+      @media screen and (min-width: 1020px) {
         /* line 28, components/_nav.sass */
         nav li.current_page_item a:before {
           visibility: visible; } }
 
-@media screen and (min-width: 0rem) {
+@media screen and (min-width: 0) {
   /* line 43, components/_nav.sass */
   .nav__responsive, .nav__flexbox ul {
     display: none; } }
-@media screen and (min-width: 58rem) {
+@media screen and (min-width: 1020px) {
   /* line 43, components/_nav.sass */
   .nav__responsive, .nav__flexbox ul {
     display: -webkit-box;
@@ -1086,7 +1081,7 @@ nav {
     display: -ms-flexbox;
     display: flex; } }
 
-@media screen and (max-width: 58rem) {
+@media screen and (max-width: 1020px) {
   /* line 52, components/_nav.sass */
   .nav__flexbox.j-checked ul {
     display: -webkit-box;
@@ -1095,7 +1090,7 @@ nav {
     display: flex;
     margin-top: 1.1rem;
     width: 100%; } }
-@media screen and (max-width: 58rem) {
+@media screen and (max-width: 1020px) {
   /* line 59, components/_nav.sass */
   .nav__flexbox.j-checked li {
     font-size: 1.2rem;
@@ -1127,14 +1122,14 @@ nav {
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap; }
-    @media screen and (min-width: 58rem) {
+    @media screen and (min-width: 1020px) {
       /* line 71, components/_nav.sass */
       .nav__flexbox ul {
         -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
         flex-flow: row wrap; } }
 
-@media screen and (min-width: 58rem) {
+@media screen and (min-width: 1020px) {
   /* line 85, components/_nav.sass */
   .nav__mobile-box {
     display: none; } }
@@ -1199,7 +1194,6 @@ nav {
       -ms-transform: translateY(1rem) rotateZ(180deg);
       transform: translateY(1rem) rotateZ(180deg);
       background: url(img/site-wide/arrow.svg) center center no-repeat;
-      -webkit-background-size: contain;
       background-size: contain;
       display: inline-block;
       height: 3rem;
@@ -1226,7 +1220,6 @@ nav {
       -ms-transform: translateY(1rem);
       transform: translateY(1rem);
       background: url(img/site-wide/arrow.svg) center center no-repeat;
-      -webkit-background-size: contain;
       background-size: contain;
       display: inline-block;
       height: 3rem;
@@ -1271,10 +1264,8 @@ nav {
     top: -1rem;
     width: 100%;
     height: 1rem;
-    -webkit-background-size: 1rem 1rem;
     background-size: 1rem 1rem;
     background-image: -webkit-linear-gradient( #2b3a48 0%, transparent 0%), -webkit-linear, 135deg, #272220 33.33%, transparent 33.33%-gradient( 0), -webkit-#272220-gradient( linear, 45deg, #272220 33.33%, #2b3a48 33.33%);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#2b3a48), to(transparent)), linear, 135deg, #272220 33.33%, transparent 33.33%-gradient( 0), #272220-gradient( linear, 45deg, #272220 33.33%, #2b3a48 33.33%);
     background-image: -webkit-linear-gradient(#2b3a48 0%, transparent 0%), linear, 135deg, #272220 33.33%, transparent 33.33%-gradient( 0), #272220-gradient( linear, 45deg, #272220 33.33%, #2b3a48 33.33%);
     background-image: linear-gradient( #2b3a48 0%, transparent 0%), linear, 135deg, #272220 33.33%, transparent 33.33%-gradient( 0), #272220-gradient( linear, 45deg, #272220 33.33%, #2b3a48 33.33%); }
 
@@ -1339,7 +1330,7 @@ nav {
   /* line 40, neat/grid/_span-columns.scss */
   .comments__avatar:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 28, components/_comments.sass */
     .comments__avatar {
       float: left;
@@ -1367,7 +1358,7 @@ nav {
   /* line 40, neat/grid/_span-columns.scss */
   .comments__content:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 38, components/_comments.sass */
     .comments__content {
       float: left;
@@ -1413,7 +1404,7 @@ nav {
   /* line 40, neat/grid/_span-columns.scss */
   .cform__email:last-child, .cform__author:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 55, components/_comments.sass */
     .cform__email, .cform__author {
       float: left;
@@ -1517,14 +1508,14 @@ body {
   display: block;
   margin-right: 4.82916%;
   width: 100%; }
-  @media screen and (min-width: 20rem) {
+  @media screen and (min-width: 352px) {
     /* line 18, ui/_footer.sass */
     .footer__contact {
       margin-bottom: 0; } }
   /* line 40, neat/grid/_span-columns.scss */
   .footer__contact:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 18, ui/_footer.sass */
     .footer__contact {
       float: left;
@@ -1554,7 +1545,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .footer__logo-box:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 36, ui/_footer.sass */
     .footer__logo-box {
       float: left;
@@ -1578,7 +1569,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .footer__menu:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 44, ui/_footer.sass */
     .footer__menu {
       float: left;
@@ -1615,21 +1606,18 @@ body {
 /* line 6, ui/_site-logo.sass */
 .site-logo--image, .pagetitle__image {
   background: url("img/site-wide/site-logo.png") no-repeat;
-  -webkit-background-size: contain;
   background-size: contain;
   background-position: center center; }
 
 /* line 12, ui/_site-logo.sass */
 .site-logo--image--dark, .services__logo--image {
   background: url("img/site-wide/site-logo--dark.png") no-repeat;
-  -webkit-background-size: contain;
   background-size: contain;
   background-position: center center; }
 
 /* line 1, ui/_section-slogan.sass */
 .block__slogan {
   background: url("img/site-wide/bg__slogan.png") no-repeat center center;
-  -webkit-background-size: cover;
   background-size: cover; }
 
 /* line 5, ui/_section-slogan.sass */
@@ -1655,7 +1643,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .slogan__video-box:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 11, ui/_section-slogan.sass */
     .slogan__video-box {
       float: left;
@@ -1680,7 +1668,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .slogan__message:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 21, ui/_section-slogan.sass */
     .slogan__message {
       float: left;
@@ -1717,7 +1705,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .badges__items:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 10, ui/_section-badges.sass */
     .badges__items {
       float: left;
@@ -1738,15 +1726,15 @@ body {
 .badges__company--image {
   min-height: 10rem;
   width: 100%; }
-  @media screen and (min-width: 30rem) {
+  @media screen and (min-width: 528px) {
     /* line 23, ui/_section-badges.sass */
     .badges__company--image {
       min-height: inherit; } }
-  @media screen and (min-width: 0rem) {
+  @media screen and (min-width: 0) {
     /* line 29, ui/_section-badges.sass */
     .badges__company--image img {
       width: 25vw; } }
-  @media screen and (min-width: 30rem) {
+  @media screen and (min-width: 528px) {
     /* line 29, ui/_section-badges.sass */
     .badges__company--image img {
       max-width: 140px; }
@@ -1764,11 +1752,11 @@ body {
   width: 6rem;
   display: block; }
 
-@media screen and (min-width: 0rem) {
+@media screen and (min-width: 0) {
   /* line 49, ui/_section-badges.sass */
   .badges__company--message {
     display: none; } }
-@media screen and (min-width: 30rem) {
+@media screen and (min-width: 528px) {
   /* line 49, ui/_section-badges.sass */
   .badges__company--message {
     display: block; } }
@@ -1802,7 +1790,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .bloglist__item:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 8, ui/_section-bloglist.sass */
     .bloglist__item {
       float: left;
@@ -1879,7 +1867,7 @@ body {
 .owl-theme .owl-controls {
   margin-top: 10px;
   text-align: center; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 69, ui/_section-slider.sass */
     .owl-theme .owl-controls {
       position: absolute;
@@ -1892,7 +1880,6 @@ body {
 /* line 1, ui/_section-pagetitle.sass */
 .block__pagetitle {
   background: url("img/site-wide/bg__pagetitle.jpg") no-repeat;
-  -webkit-background-size: cover;
   background-size: cover; }
 
 /* line 5, ui/_section-pagetitle.sass */
@@ -1936,7 +1923,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .pagetitle__subtitle:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 30rem) {
+  @media screen and (min-width: 528px) {
     /* line 24, ui/_section-pagetitle.sass */
     .pagetitle__subtitle {
       float: left;
@@ -1947,7 +1934,7 @@ body {
       /* line 40, neat/grid/_span-columns.scss */
       .pagetitle__subtitle:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 24, ui/_section-pagetitle.sass */
     .pagetitle__subtitle {
       float: left;
@@ -1988,7 +1975,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .shredprocess__item:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 5, ui/_section-shredprocess.sass */
     .shredprocess__item {
       float: left;
@@ -2004,7 +1991,6 @@ body {
         width: 2.3rem;
         height: 4rem;
         background: url("img/shredprocess/arrow.svg") no-repeat center center;
-        -webkit-background-size: contain;
         background-size: contain;
         display: block;
         position: absolute;
@@ -2052,7 +2038,7 @@ body {
   .pagecontent__image:last-child, .pagecontent__content:last-child {
     margin-right: 0; }
 
-@media screen and (min-width: 45rem) {
+@media screen and (min-width: 792px) {
   /* line 15, ui/_section-pagecontent.sass */
   .pagecontent__image {
     float: left;
@@ -2067,7 +2053,7 @@ body {
   max-width: 100%;
   margin: 0 auto; }
 
-@media screen and (min-width: 45rem) {
+@media screen and (min-width: 792px) {
   /* line 24, ui/_section-pagecontent.sass */
   .pagecontent__content {
     float: left;
@@ -2090,7 +2076,7 @@ body {
 /* line 42, ui/_section-pagecontent.sass */
 .pagecontent__text {
   margin: 0.2rem 0 2.5rem 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 42, ui/_section-pagecontent.sass */
     .pagecontent__text {
       font-size: 0.75rem; } }
@@ -2122,7 +2108,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .about__company-box:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 30rem) {
+  @media screen and (min-width: 528px) {
     /* line 8, ui/_section-about.sass */
     .about__company-box {
       float: left;
@@ -2133,7 +2119,7 @@ body {
       /* line 40, neat/grid/_span-columns.scss */
       .about__company-box:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 8, ui/_section-about.sass */
     .about__company-box {
       float: left;
@@ -2163,7 +2149,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .about__list:last-child, .about__list--right:last-child, .about__list--left:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 30, ui/_section-about.sass */
     .about__list, .about__list--right, .about__list--left {
       float: left;
@@ -2205,7 +2191,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .blog__posts:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 9, ui/_section-blog.sass */
     .blog__posts {
       float: left;
@@ -2237,7 +2223,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .blog__date:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 18, ui/_section-blog.sass */
     .blog__date {
       float: left;
@@ -2285,7 +2271,7 @@ body {
   /* line 23, bourbon/addons/_clearfix.scss */
   .blog__content:after {
     clear: both; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 52, ui/_section-blog.sass */
     .blog__content {
       float: left;
@@ -2322,7 +2308,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .blog__image:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 73, ui/_section-blog.sass */
     .blog__image {
       float: left;
@@ -2380,7 +2366,7 @@ body {
   .blog__comments:last-child, .blog__tags:last-child, .blog__share:last-child {
     margin-right: 0; }
 
-@media screen and (min-width: 30rem) {
+@media screen and (min-width: 528px) {
   /* line 120, ui/_section-blog.sass */
   .blog__comments {
     float: left;
@@ -2391,7 +2377,7 @@ body {
     .blog__comments:last-child {
       margin-right: 0; } }
 
-@media screen and (min-width: 30rem) {
+@media screen and (min-width: 528px) {
   /* line 126, ui/_section-blog.sass */
   .blog__tags {
     float: left;
@@ -2402,7 +2388,7 @@ body {
     .blog__tags:last-child {
       margin-right: 0; } }
 
-@media screen and (min-width: 30rem) {
+@media screen and (min-width: 528px) {
   /* line 131, ui/_section-blog.sass */
   .blog__share {
     float: left;
@@ -2431,7 +2417,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .blog__sidebar:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 58rem) {
+  @media screen and (min-width: 1020px) {
     /* line 145, ui/_section-blog.sass */
     .blog__sidebar {
       float: left;
@@ -2470,7 +2456,7 @@ body {
   /* line 23, bourbon/addons/_clearfix.scss */
   .block__services--ribbon:after {
     clear: both; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 1, ui/_ribbon-services.sass */
     .block__services--ribbon {
       display: block;
@@ -2486,7 +2472,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .services__logo-column:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 14, ui/_ribbon-services.sass */
     .services__logo-column {
       float: left;
@@ -2507,7 +2493,6 @@ body {
 .services__logo--image {
   background-position: center center;
   height: 5.6rem;
-  -webkit-background-size: contain;
   background-size: contain; }
 
 /* line 33, ui/_ribbon-services.sass */
@@ -2519,7 +2504,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .services--column:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 33, ui/_ribbon-services.sass */
     .services--column {
       float: left;
@@ -2563,7 +2548,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .contact__column:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 12, ui/_ribbon-contact.scss */
     .contact__column {
       float: left;
@@ -2573,7 +2558,7 @@ body {
       /* line 40, neat/grid/_span-columns.scss */
       .contact__column:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 45rem) {
+  @media screen and (min-width: 792px) {
     /* line 18, ui/_ribbon-contact.scss */
     .contact__column.map__neighbor {
       padding-top: 5.8rem; } }
@@ -2594,7 +2579,7 @@ body {
   /* line 40, neat/grid/_span-columns.scss */
   .testmonial__message:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 58rem) {
+  @media screen and (min-width: 1020px) {
     /* line 8, ui/_ribbon-testmonial.sass */
     .testmonial__message {
       float: left;
@@ -2621,7 +2606,7 @@ body {
 /* line 1, ui/_ribbon-companyinfo.sass */
 .block__companyinfo {
   display: none; }
-  @media screen and (min-width: 58rem) {
+  @media screen and (min-width: 1020px) {
     /* line 1, ui/_ribbon-companyinfo.sass */
     .block__companyinfo {
       display: block; } }
@@ -2709,7 +2694,6 @@ body {
     font-size: .6rem;
     font-family: "Helvetica Neue", "Helvetica", sans-serif;
     text-transform: uppercase;
-    -webkit-box-shadow: 0px 1px 0px #8c8c8c, 0px 2px 0px #8c8c8c, 0px 3px 0px #8c8c8c, 0px 4px 0px #8c8c8c, 0px 5px 0px #8c8c8c;
     box-shadow: 0px 1px 0px #8c8c8c, 0px 2px 0px #8c8c8c, 0px 3px 0px #8c8c8c, 0px 4px 0px #8c8c8c, 0px 5px 0px #8c8c8c; }
     @media only screen and (min-width: 0rem) {
       /* line 15, plugins/traffic-light.scss */
@@ -2931,16 +2915,6 @@ body {
 
 .zz_secondary:before{
   background:
-    linear-gradient(
-      45deg, transparent 33.333%,
-      #e7c730 33.333%, #e7c730 66.667%,
-      transparent 66.667%
-    ), linear-gradient(
-      -45deg, transparent 33.333%,
-      #e7c730 33.333%, #e7c730 66.667%,
-      transparent 66.667%
-    );
-  background:
     -webkit-linear-gradient(45deg, transparent 33.333%, #e7c730 33.333%, #e7c730 66.667%, transparent 66.667%), -webkit-linear-gradient(135deg, transparent 33.333%, #e7c730 33.333%, #e7c730 66.667%, transparent 66.667%);
   background:
     linear-gradient(
@@ -2953,7 +2927,6 @@ body {
       #e7c730 33.333%, #e7c730 66.667%,
       transparent 66.667%
     );
-  -webkit-background-size: 20px 40px;
   background-size: 20px 40px;
   content: "";
   display: block;
@@ -2970,16 +2943,6 @@ body {
 
 .zz_white:before{
   background:
-    linear-gradient(
-      45deg, transparent 33.333%,
-      #ffffff 33.333%, #ffffff 66.667%,
-      transparent 66.667%
-    ), linear-gradient(
-      -45deg, transparent 33.333%,
-      #ffffff 33.333%, #ffffff 66.667%,
-      transparent 66.667%
-    );
-  background:
     -webkit-linear-gradient(45deg, transparent 33.333%, #ffffff 33.333%, #ffffff 66.667%, transparent 66.667%), -webkit-linear-gradient(135deg, transparent 33.333%, #ffffff 33.333%, #ffffff 66.667%, transparent 66.667%);
   background:
     linear-gradient(
@@ -2992,7 +2955,6 @@ body {
       #ffffff 33.333%, #ffffff 66.667%,
       transparent 66.667%
     );
-  -webkit-background-size: 20px 40px;
   background-size: 20px 40px;
   content: "";
   display: block;
@@ -3009,16 +2971,6 @@ body {
 
 .zz_gray:before{
   background:
-    linear-gradient(
-      45deg, transparent 33.333%,
-      #a8a8a8 33.333%, #a8a8a8 66.667%,
-      transparent 66.667%
-    ), linear-gradient(
-      -45deg, transparent 33.333%,
-      #a8a8a8 33.333%, #a8a8a8 66.667%,
-      transparent 66.667%
-    );
-  background:
     -webkit-linear-gradient(45deg, transparent 33.333%, #a8a8a8 33.333%, #a8a8a8 66.667%, transparent 66.667%), -webkit-linear-gradient(135deg, transparent 33.333%, #a8a8a8 33.333%, #a8a8a8 66.667%, transparent 66.667%);
   background:
     linear-gradient(
@@ -3031,7 +2983,6 @@ body {
       #a8a8a8 33.333%, #a8a8a8 66.667%,
       transparent 66.667%
     );
-  -webkit-background-size: 20px 40px;
   background-size: 20px 40px;
   content: "";
   display: block;
@@ -3048,16 +2999,6 @@ body {
 
 .zz_main:before{
   background:
-    linear-gradient(
-      45deg, transparent 33.333%,
-      #604573 33.333%, #604573 66.667%,
-      transparent 66.667%
-    ), linear-gradient(
-      -45deg, transparent 33.333%,
-      #604573 33.333%, #604573 66.667%,
-      transparent 66.667%
-    );
-  background:
     -webkit-linear-gradient(45deg, transparent 33.333%, #604573 33.333%, #604573 66.667%, transparent 66.667%), -webkit-linear-gradient(135deg, transparent 33.333%, #604573 33.333%, #604573 66.667%, transparent 66.667%);
   background:
     linear-gradient(
@@ -3070,7 +3011,6 @@ body {
       #604573 33.333%, #604573 66.667%,
       transparent 66.667%
     );
-  -webkit-background-size: 20px 40px;
   background-size: 20px 40px;
   content: "";
   display: block;
@@ -3087,16 +3027,6 @@ body {
 
 .zz_gray-light:before{
   background:
-    linear-gradient(
-      45deg, transparent 33.333%,
-      #ededed 33.333%, #ededed 66.667%,
-      transparent 66.667%
-    ), linear-gradient(
-      -45deg, transparent 33.333%,
-      #ededed 33.333%, #ededed 66.667%,
-      transparent 66.667%
-    );
-  background:
     -webkit-linear-gradient(45deg, transparent 33.333%, #ededed 33.333%, #ededed 66.667%, transparent 66.667%), -webkit-linear-gradient(135deg, transparent 33.333%, #ededed 33.333%, #ededed 66.667%, transparent 66.667%);
   background:
     linear-gradient(
@@ -3109,7 +3039,6 @@ body {
       #ededed 33.333%, #ededed 66.667%,
       transparent 66.667%
     );
-  -webkit-background-size: 20px 40px;
   background-size: 20px 40px;
   content: "";
   display: block;
@@ -3126,16 +3055,6 @@ body {
 
 .zz_black:before{
   background:
-    linear-gradient(
-      45deg, transparent 33.333%,
-      #292929 33.333%, #292929 66.667%,
-      transparent 66.667%
-    ), linear-gradient(
-      -45deg, transparent 33.333%,
-      #292929 33.333%, #292929 66.667%,
-      transparent 66.667%
-    );
-  background:
     -webkit-linear-gradient(45deg, transparent 33.333%, #292929 33.333%, #292929 66.667%, transparent 66.667%), -webkit-linear-gradient(135deg, transparent 33.333%, #292929 33.333%, #292929 66.667%, transparent 66.667%);
   background:
     linear-gradient(
@@ -3148,7 +3067,6 @@ body {
       #292929 33.333%, #292929 66.667%,
       transparent 66.667%
     );
-  -webkit-background-size: 20px 40px;
   background-size: 20px 40px;
   content: "";
   display: block;
@@ -3165,16 +3083,6 @@ body {
 
 .zz_body:before{
   background:
-    linear-gradient(
-      45deg, transparent 33.333%,
-      #f3f3f3 33.333%, #f3f3f3 66.667%,
-      transparent 66.667%
-    ), linear-gradient(
-      -45deg, transparent 33.333%,
-      #f3f3f3 33.333%, #f3f3f3 66.667%,
-      transparent 66.667%
-    );
-  background:
     -webkit-linear-gradient(45deg, transparent 33.333%, #f3f3f3 33.333%, #f3f3f3 66.667%, transparent 66.667%), -webkit-linear-gradient(135deg, transparent 33.333%, #f3f3f3 33.333%, #f3f3f3 66.667%, transparent 66.667%);
   background:
     linear-gradient(
@@ -3187,7 +3095,6 @@ body {
       #f3f3f3 33.333%, #f3f3f3 66.667%,
       transparent 66.667%
     );
-  -webkit-background-size: 20px 40px;
   background-size: 20px 40px;
   content: "";
   display: block;

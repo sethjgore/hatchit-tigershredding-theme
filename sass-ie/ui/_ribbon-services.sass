@@ -1,0 +1,48 @@
+.block__services--ribbon
+  +outer-container
+  display: block
+  position: relative
+  z-index: 10
+
+
+.services--row
+  @extend .row
+
+
+.services__logo-column
+  +span-columns(4 of 12)
+
+
+.services__logo-box
+  @extend .is__background--c-black
+  @extend .is__this--border-radius
+  width: 10rem
+  padding: 0.7rem 0
+  margin: -0.7rem auto -0.7rem
+
+.services__logo--image
+  @extend .site-logo--image--dark
+  background-position: center center
+  height: 100px
+  background-size: contain
+
+.services--column
+  @extend %pt-8
+  +span-columns(4 of 12)
+
+  ul
+    +fill-parent
+    display: flex
+    justify-content: space-around
+
+  li
+    @extend .is__this--inline
+    @extend h4
+    @extend .is__text--c-white
+    @extend .is__text--centered
+
+    &:last-child
+      @extend %pl-20
+
+    &:hover
+      @extend .is__text--c-secondary

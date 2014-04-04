@@ -1,0 +1,3349 @@
+@charset "UTF-8";
+/* ==========================================================================
+   Normalize.scss settings
+   ========================================================================== */
+/**
+ * Includes legacy browser support IE6/7
+ *
+ * Set to false if you want to drop support for IE6 and IE7
+ */
+/* Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ */
+/* line 23, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 36, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 49, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 69, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 86, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 96, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 108, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 117, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 129, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 137, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 152, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 161, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 197, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 236, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 244, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 252, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 256, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 8/9/10.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+/* line 311, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 322, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 333, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 341, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 351, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 360, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 4. Improves appearance and consistency in all browsers.
+ */
+/* line 387, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 405, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 416, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 431, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 446, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 455, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 466, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 476, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 492, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 503, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 516, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 525, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Corrects text not wrapping in Firefox 3.
+ * 4. Corrects alignment displayed oddly in IE 6/7.
+ */
+/* line 538, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 551, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 560, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 571, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 576, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/normalize-scss/_normalize.scss */
+td,
+th {
+  padding: 0; }
+
+/*!
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.0.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 4, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_core.scss */
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* makes the font 33% larger relative to the icon container */
+/* line 5, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_larger.scss */
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%; }
+
+/* line 10, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_larger.scss */
+.fa-2x {
+  font-size: 2em; }
+
+/* line 11, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_larger.scss */
+.fa-3x {
+  font-size: 3em; }
+
+/* line 12, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_larger.scss */
+.fa-4x {
+  font-size: 4em; }
+
+/* line 13, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_larger.scss */
+.fa-5x {
+  font-size: 5em; }
+
+/* line 3, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_fixed-width.scss */
+.fa-fw {
+  width: 1.28571em;
+  text-align: center; }
+
+/* line 4, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_list.scss */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none; }
+  /* line 8, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_list.scss */
+  .fa-ul > li {
+    position: relative; }
+
+/* line 10, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_list.scss */
+.fa-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center; }
+  /* line 16, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_list.scss */
+  .fa-li.fa-lg {
+    left: -1.85714em; }
+
+/* line 4, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_bordered-pulled.scss */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em; }
+
+/* line 10, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_bordered-pulled.scss */
+.pull-right {
+  float: right; }
+
+/* line 11, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_bordered-pulled.scss */
+.pull-left {
+  float: left; }
+
+/* line 14, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_bordered-pulled.scss */
+.fa.pull-left {
+  margin-right: .3em; }
+/* line 15, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_bordered-pulled.scss */
+.fa.pull-right {
+  margin-left: .3em; }
+
+/* line 4, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_spinning.scss */
+.fa-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear; }
+
+@-moz-keyframes spin {
+  /* line 12, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_spinning.scss */
+  0% {
+    -moz-transform: rotate(0deg); }
+
+  /* line 13, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_spinning.scss */
+  100% {
+    -moz-transform: rotate(359deg); } }
+@-webkit-keyframes spin {
+  /* line 16, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_spinning.scss */
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  /* line 17, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_spinning.scss */
+  100% {
+    -webkit-transform: rotate(359deg); } }
+@-o-keyframes spin {
+  /* line 20, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_spinning.scss */
+  0% {
+    -o-transform: rotate(0deg); }
+
+  /* line 21, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_spinning.scss */
+  100% {
+    -o-transform: rotate(359deg); } }
+@-ms-keyframes spin {
+  /* line 24, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_spinning.scss */
+  0% {
+    -ms-transform: rotate(0deg); }
+
+  /* line 25, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_spinning.scss */
+  100% {
+    -ms-transform: rotate(359deg); } }
+@keyframes spin {
+  /* line 28, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_spinning.scss */
+  0% {
+    transform: rotate(0deg); }
+
+  /* line 29, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_spinning.scss */
+  100% {
+    transform: rotate(359deg); } }
+/* line 4, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_rotated-flipped.scss */
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+/* line 5, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_rotated-flipped.scss */
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+/* line 6, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_rotated-flipped.scss */
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+/* line 8, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_rotated-flipped.scss */
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
+/* line 9, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_rotated-flipped.scss */
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1); }
+
+/* line 4, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_stacked.scss */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle; }
+
+/* line 12, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_stacked.scss */
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+/* line 18, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_stacked.scss */
+.fa-stack-1x {
+  line-height: inherit; }
+
+/* line 19, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_stacked.scss */
+.fa-stack-2x {
+  font-size: 2em; }
+
+/* line 20, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_stacked.scss */
+.fa-inverse {
+  color: white; }
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 4, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-glass:before {
+  content: "\f000"; }
+
+/* line 5, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-music:before {
+  content: "\f001"; }
+
+/* line 6, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-search:before {
+  content: "\f002"; }
+
+/* line 7, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-envelope-o:before {
+  content: "\f003"; }
+
+/* line 8, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-heart:before {
+  content: "\f004"; }
+
+/* line 9, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-star:before {
+  content: "\f005"; }
+
+/* line 10, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-star-o:before {
+  content: "\f006"; }
+
+/* line 11, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-user:before {
+  content: "\f007"; }
+
+/* line 12, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-film:before {
+  content: "\f008"; }
+
+/* line 13, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-th-large:before {
+  content: "\f009"; }
+
+/* line 14, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-th:before {
+  content: "\f00a"; }
+
+/* line 15, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-th-list:before {
+  content: "\f00b"; }
+
+/* line 16, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-check:before {
+  content: "\f00c"; }
+
+/* line 17, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-times:before {
+  content: "\f00d"; }
+
+/* line 18, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-search-plus:before {
+  content: "\f00e"; }
+
+/* line 19, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-search-minus:before {
+  content: "\f010"; }
+
+/* line 20, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-power-off:before {
+  content: "\f011"; }
+
+/* line 21, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-signal:before {
+  content: "\f012"; }
+
+/* line 22, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-gear:before,
+.fa-cog:before {
+  content: "\f013"; }
+
+/* line 24, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-trash-o:before {
+  content: "\f014"; }
+
+/* line 25, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-home:before {
+  content: "\f015"; }
+
+/* line 26, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-file-o:before {
+  content: "\f016"; }
+
+/* line 27, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-clock-o:before {
+  content: "\f017"; }
+
+/* line 28, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-road:before {
+  content: "\f018"; }
+
+/* line 29, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-download:before {
+  content: "\f019"; }
+
+/* line 30, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrow-circle-o-down:before {
+  content: "\f01a"; }
+
+/* line 31, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrow-circle-o-up:before {
+  content: "\f01b"; }
+
+/* line 32, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-inbox:before {
+  content: "\f01c"; }
+
+/* line 33, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-play-circle-o:before {
+  content: "\f01d"; }
+
+/* line 34, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "\f01e"; }
+
+/* line 36, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-refresh:before {
+  content: "\f021"; }
+
+/* line 37, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-list-alt:before {
+  content: "\f022"; }
+
+/* line 38, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-lock:before {
+  content: "\f023"; }
+
+/* line 39, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-flag:before {
+  content: "\f024"; }
+
+/* line 40, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-headphones:before {
+  content: "\f025"; }
+
+/* line 41, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-volume-off:before {
+  content: "\f026"; }
+
+/* line 42, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-volume-down:before {
+  content: "\f027"; }
+
+/* line 43, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-volume-up:before {
+  content: "\f028"; }
+
+/* line 44, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-qrcode:before {
+  content: "\f029"; }
+
+/* line 45, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-barcode:before {
+  content: "\f02a"; }
+
+/* line 46, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-tag:before {
+  content: "\f02b"; }
+
+/* line 47, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-tags:before {
+  content: "\f02c"; }
+
+/* line 48, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-book:before {
+  content: "\f02d"; }
+
+/* line 49, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-bookmark:before {
+  content: "\f02e"; }
+
+/* line 50, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-print:before {
+  content: "\f02f"; }
+
+/* line 51, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-camera:before {
+  content: "\f030"; }
+
+/* line 52, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-font:before {
+  content: "\f031"; }
+
+/* line 53, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-bold:before {
+  content: "\f032"; }
+
+/* line 54, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-italic:before {
+  content: "\f033"; }
+
+/* line 55, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-text-height:before {
+  content: "\f034"; }
+
+/* line 56, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-text-width:before {
+  content: "\f035"; }
+
+/* line 57, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-align-left:before {
+  content: "\f036"; }
+
+/* line 58, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-align-center:before {
+  content: "\f037"; }
+
+/* line 59, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-align-right:before {
+  content: "\f038"; }
+
+/* line 60, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-align-justify:before {
+  content: "\f039"; }
+
+/* line 61, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-list:before {
+  content: "\f03a"; }
+
+/* line 62, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "\f03b"; }
+
+/* line 64, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-indent:before {
+  content: "\f03c"; }
+
+/* line 65, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-video-camera:before {
+  content: "\f03d"; }
+
+/* line 66, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-picture-o:before {
+  content: "\f03e"; }
+
+/* line 67, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-pencil:before {
+  content: "\f040"; }
+
+/* line 68, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-map-marker:before {
+  content: "\f041"; }
+
+/* line 69, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-adjust:before {
+  content: "\f042"; }
+
+/* line 70, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-tint:before {
+  content: "\f043"; }
+
+/* line 71, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "\f044"; }
+
+/* line 73, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-share-square-o:before {
+  content: "\f045"; }
+
+/* line 74, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-check-square-o:before {
+  content: "\f046"; }
+
+/* line 75, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrows:before {
+  content: "\f047"; }
+
+/* line 76, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-step-backward:before {
+  content: "\f048"; }
+
+/* line 77, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-fast-backward:before {
+  content: "\f049"; }
+
+/* line 78, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-backward:before {
+  content: "\f04a"; }
+
+/* line 79, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-play:before {
+  content: "\f04b"; }
+
+/* line 80, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-pause:before {
+  content: "\f04c"; }
+
+/* line 81, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-stop:before {
+  content: "\f04d"; }
+
+/* line 82, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-forward:before {
+  content: "\f04e"; }
+
+/* line 83, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-fast-forward:before {
+  content: "\f050"; }
+
+/* line 84, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-step-forward:before {
+  content: "\f051"; }
+
+/* line 85, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-eject:before {
+  content: "\f052"; }
+
+/* line 86, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-chevron-left:before {
+  content: "\f053"; }
+
+/* line 87, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-chevron-right:before {
+  content: "\f054"; }
+
+/* line 88, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-plus-circle:before {
+  content: "\f055"; }
+
+/* line 89, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-minus-circle:before {
+  content: "\f056"; }
+
+/* line 90, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-times-circle:before {
+  content: "\f057"; }
+
+/* line 91, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-check-circle:before {
+  content: "\f058"; }
+
+/* line 92, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-question-circle:before {
+  content: "\f059"; }
+
+/* line 93, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-info-circle:before {
+  content: "\f05a"; }
+
+/* line 94, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-crosshairs:before {
+  content: "\f05b"; }
+
+/* line 95, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-times-circle-o:before {
+  content: "\f05c"; }
+
+/* line 96, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-check-circle-o:before {
+  content: "\f05d"; }
+
+/* line 97, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-ban:before {
+  content: "\f05e"; }
+
+/* line 98, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrow-left:before {
+  content: "\f060"; }
+
+/* line 99, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrow-right:before {
+  content: "\f061"; }
+
+/* line 100, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrow-up:before {
+  content: "\f062"; }
+
+/* line 101, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrow-down:before {
+  content: "\f063"; }
+
+/* line 102, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "\f064"; }
+
+/* line 104, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-expand:before {
+  content: "\f065"; }
+
+/* line 105, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-compress:before {
+  content: "\f066"; }
+
+/* line 106, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-plus:before {
+  content: "\f067"; }
+
+/* line 107, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-minus:before {
+  content: "\f068"; }
+
+/* line 108, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-asterisk:before {
+  content: "\f069"; }
+
+/* line 109, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-exclamation-circle:before {
+  content: "\f06a"; }
+
+/* line 110, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-gift:before {
+  content: "\f06b"; }
+
+/* line 111, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-leaf:before {
+  content: "\f06c"; }
+
+/* line 112, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-fire:before {
+  content: "\f06d"; }
+
+/* line 113, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-eye:before {
+  content: "\f06e"; }
+
+/* line 114, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-eye-slash:before {
+  content: "\f070"; }
+
+/* line 115, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "\f071"; }
+
+/* line 117, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-plane:before {
+  content: "\f072"; }
+
+/* line 118, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-calendar:before {
+  content: "\f073"; }
+
+/* line 119, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-random:before {
+  content: "\f074"; }
+
+/* line 120, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-comment:before {
+  content: "\f075"; }
+
+/* line 121, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-magnet:before {
+  content: "\f076"; }
+
+/* line 122, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-chevron-up:before {
+  content: "\f077"; }
+
+/* line 123, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-chevron-down:before {
+  content: "\f078"; }
+
+/* line 124, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-retweet:before {
+  content: "\f079"; }
+
+/* line 125, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-shopping-cart:before {
+  content: "\f07a"; }
+
+/* line 126, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-folder:before {
+  content: "\f07b"; }
+
+/* line 127, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-folder-open:before {
+  content: "\f07c"; }
+
+/* line 128, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrows-v:before {
+  content: "\f07d"; }
+
+/* line 129, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrows-h:before {
+  content: "\f07e"; }
+
+/* line 130, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-bar-chart-o:before {
+  content: "\f080"; }
+
+/* line 131, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-twitter-square:before {
+  content: "\f081"; }
+
+/* line 132, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-facebook-square:before {
+  content: "\f082"; }
+
+/* line 133, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-camera-retro:before {
+  content: "\f083"; }
+
+/* line 134, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-key:before {
+  content: "\f084"; }
+
+/* line 135, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-gears:before,
+.fa-cogs:before {
+  content: "\f085"; }
+
+/* line 137, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-comments:before {
+  content: "\f086"; }
+
+/* line 138, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-thumbs-o-up:before {
+  content: "\f087"; }
+
+/* line 139, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-thumbs-o-down:before {
+  content: "\f088"; }
+
+/* line 140, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-star-half:before {
+  content: "\f089"; }
+
+/* line 141, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-heart-o:before {
+  content: "\f08a"; }
+
+/* line 142, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-sign-out:before {
+  content: "\f08b"; }
+
+/* line 143, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-linkedin-square:before {
+  content: "\f08c"; }
+
+/* line 144, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-thumb-tack:before {
+  content: "\f08d"; }
+
+/* line 145, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-external-link:before {
+  content: "\f08e"; }
+
+/* line 146, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-sign-in:before {
+  content: "\f090"; }
+
+/* line 147, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-trophy:before {
+  content: "\f091"; }
+
+/* line 148, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-github-square:before {
+  content: "\f092"; }
+
+/* line 149, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-upload:before {
+  content: "\f093"; }
+
+/* line 150, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-lemon-o:before {
+  content: "\f094"; }
+
+/* line 151, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-phone:before {
+  content: "\f095"; }
+
+/* line 152, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-square-o:before {
+  content: "\f096"; }
+
+/* line 153, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-bookmark-o:before {
+  content: "\f097"; }
+
+/* line 154, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-phone-square:before {
+  content: "\f098"; }
+
+/* line 155, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-twitter:before {
+  content: "\f099"; }
+
+/* line 156, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-facebook:before {
+  content: "\f09a"; }
+
+/* line 157, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-github:before {
+  content: "\f09b"; }
+
+/* line 158, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-unlock:before {
+  content: "\f09c"; }
+
+/* line 159, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-credit-card:before {
+  content: "\f09d"; }
+
+/* line 160, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-rss:before {
+  content: "\f09e"; }
+
+/* line 161, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-hdd-o:before {
+  content: "\f0a0"; }
+
+/* line 162, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-bullhorn:before {
+  content: "\f0a1"; }
+
+/* line 163, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-bell:before {
+  content: "\f0f3"; }
+
+/* line 164, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-certificate:before {
+  content: "\f0a3"; }
+
+/* line 165, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-hand-o-right:before {
+  content: "\f0a4"; }
+
+/* line 166, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-hand-o-left:before {
+  content: "\f0a5"; }
+
+/* line 167, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-hand-o-up:before {
+  content: "\f0a6"; }
+
+/* line 168, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-hand-o-down:before {
+  content: "\f0a7"; }
+
+/* line 169, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrow-circle-left:before {
+  content: "\f0a8"; }
+
+/* line 170, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrow-circle-right:before {
+  content: "\f0a9"; }
+
+/* line 171, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrow-circle-up:before {
+  content: "\f0aa"; }
+
+/* line 172, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrow-circle-down:before {
+  content: "\f0ab"; }
+
+/* line 173, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-globe:before {
+  content: "\f0ac"; }
+
+/* line 174, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-wrench:before {
+  content: "\f0ad"; }
+
+/* line 175, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-tasks:before {
+  content: "\f0ae"; }
+
+/* line 176, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-filter:before {
+  content: "\f0b0"; }
+
+/* line 177, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-briefcase:before {
+  content: "\f0b1"; }
+
+/* line 178, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrows-alt:before {
+  content: "\f0b2"; }
+
+/* line 179, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-group:before,
+.fa-users:before {
+  content: "\f0c0"; }
+
+/* line 181, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-chain:before,
+.fa-link:before {
+  content: "\f0c1"; }
+
+/* line 183, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-cloud:before {
+  content: "\f0c2"; }
+
+/* line 184, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-flask:before {
+  content: "\f0c3"; }
+
+/* line 185, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-cut:before,
+.fa-scissors:before {
+  content: "\f0c4"; }
+
+/* line 187, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-copy:before,
+.fa-files-o:before {
+  content: "\f0c5"; }
+
+/* line 189, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-paperclip:before {
+  content: "\f0c6"; }
+
+/* line 190, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "\f0c7"; }
+
+/* line 192, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-square:before {
+  content: "\f0c8"; }
+
+/* line 193, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-bars:before {
+  content: "\f0c9"; }
+
+/* line 194, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-list-ul:before {
+  content: "\f0ca"; }
+
+/* line 195, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-list-ol:before {
+  content: "\f0cb"; }
+
+/* line 196, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-strikethrough:before {
+  content: "\f0cc"; }
+
+/* line 197, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-underline:before {
+  content: "\f0cd"; }
+
+/* line 198, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-table:before {
+  content: "\f0ce"; }
+
+/* line 199, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-magic:before {
+  content: "\f0d0"; }
+
+/* line 200, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-truck:before {
+  content: "\f0d1"; }
+
+/* line 201, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-pinterest:before {
+  content: "\f0d2"; }
+
+/* line 202, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-pinterest-square:before {
+  content: "\f0d3"; }
+
+/* line 203, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-google-plus-square:before {
+  content: "\f0d4"; }
+
+/* line 204, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-google-plus:before {
+  content: "\f0d5"; }
+
+/* line 205, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-money:before {
+  content: "\f0d6"; }
+
+/* line 206, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-caret-down:before {
+  content: "\f0d7"; }
+
+/* line 207, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-caret-up:before {
+  content: "\f0d8"; }
+
+/* line 208, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-caret-left:before {
+  content: "\f0d9"; }
+
+/* line 209, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-caret-right:before {
+  content: "\f0da"; }
+
+/* line 210, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-columns:before {
+  content: "\f0db"; }
+
+/* line 211, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "\f0dc"; }
+
+/* line 213, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-sort-down:before,
+.fa-sort-asc:before {
+  content: "\f0dd"; }
+
+/* line 215, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-sort-up:before,
+.fa-sort-desc:before {
+  content: "\f0de"; }
+
+/* line 217, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-envelope:before {
+  content: "\f0e0"; }
+
+/* line 218, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-linkedin:before {
+  content: "\f0e1"; }
+
+/* line 219, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "\f0e2"; }
+
+/* line 221, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-legal:before,
+.fa-gavel:before {
+  content: "\f0e3"; }
+
+/* line 223, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "\f0e4"; }
+
+/* line 225, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-comment-o:before {
+  content: "\f0e5"; }
+
+/* line 226, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-comments-o:before {
+  content: "\f0e6"; }
+
+/* line 227, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-flash:before,
+.fa-bolt:before {
+  content: "\f0e7"; }
+
+/* line 229, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-sitemap:before {
+  content: "\f0e8"; }
+
+/* line 230, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-umbrella:before {
+  content: "\f0e9"; }
+
+/* line 231, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "\f0ea"; }
+
+/* line 233, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-lightbulb-o:before {
+  content: "\f0eb"; }
+
+/* line 234, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-exchange:before {
+  content: "\f0ec"; }
+
+/* line 235, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-cloud-download:before {
+  content: "\f0ed"; }
+
+/* line 236, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-cloud-upload:before {
+  content: "\f0ee"; }
+
+/* line 237, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-user-md:before {
+  content: "\f0f0"; }
+
+/* line 238, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-stethoscope:before {
+  content: "\f0f1"; }
+
+/* line 239, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-suitcase:before {
+  content: "\f0f2"; }
+
+/* line 240, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-bell-o:before {
+  content: "\f0a2"; }
+
+/* line 241, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-coffee:before {
+  content: "\f0f4"; }
+
+/* line 242, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-cutlery:before {
+  content: "\f0f5"; }
+
+/* line 243, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-file-text-o:before {
+  content: "\f0f6"; }
+
+/* line 244, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-building-o:before {
+  content: "\f0f7"; }
+
+/* line 245, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-hospital-o:before {
+  content: "\f0f8"; }
+
+/* line 246, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-ambulance:before {
+  content: "\f0f9"; }
+
+/* line 247, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-medkit:before {
+  content: "\f0fa"; }
+
+/* line 248, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-fighter-jet:before {
+  content: "\f0fb"; }
+
+/* line 249, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-beer:before {
+  content: "\f0fc"; }
+
+/* line 250, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-h-square:before {
+  content: "\f0fd"; }
+
+/* line 251, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-plus-square:before {
+  content: "\f0fe"; }
+
+/* line 252, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-angle-double-left:before {
+  content: "\f100"; }
+
+/* line 253, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-angle-double-right:before {
+  content: "\f101"; }
+
+/* line 254, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-angle-double-up:before {
+  content: "\f102"; }
+
+/* line 255, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-angle-double-down:before {
+  content: "\f103"; }
+
+/* line 256, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-angle-left:before {
+  content: "\f104"; }
+
+/* line 257, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-angle-right:before {
+  content: "\f105"; }
+
+/* line 258, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-angle-up:before {
+  content: "\f106"; }
+
+/* line 259, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-angle-down:before {
+  content: "\f107"; }
+
+/* line 260, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-desktop:before {
+  content: "\f108"; }
+
+/* line 261, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-laptop:before {
+  content: "\f109"; }
+
+/* line 262, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-tablet:before {
+  content: "\f10a"; }
+
+/* line 263, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\f10b"; }
+
+/* line 265, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-circle-o:before {
+  content: "\f10c"; }
+
+/* line 266, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-quote-left:before {
+  content: "\f10d"; }
+
+/* line 267, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-quote-right:before {
+  content: "\f10e"; }
+
+/* line 268, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-spinner:before {
+  content: "\f110"; }
+
+/* line 269, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-circle:before {
+  content: "\f111"; }
+
+/* line 270, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "\f112"; }
+
+/* line 272, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-github-alt:before {
+  content: "\f113"; }
+
+/* line 273, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-folder-o:before {
+  content: "\f114"; }
+
+/* line 274, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-folder-open-o:before {
+  content: "\f115"; }
+
+/* line 275, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-smile-o:before {
+  content: "\f118"; }
+
+/* line 276, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-frown-o:before {
+  content: "\f119"; }
+
+/* line 277, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-meh-o:before {
+  content: "\f11a"; }
+
+/* line 278, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-gamepad:before {
+  content: "\f11b"; }
+
+/* line 279, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-keyboard-o:before {
+  content: "\f11c"; }
+
+/* line 280, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-flag-o:before {
+  content: "\f11d"; }
+
+/* line 281, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-flag-checkered:before {
+  content: "\f11e"; }
+
+/* line 282, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-terminal:before {
+  content: "\f120"; }
+
+/* line 283, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-code:before {
+  content: "\f121"; }
+
+/* line 284, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-reply-all:before {
+  content: "\f122"; }
+
+/* line 285, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-mail-reply-all:before {
+  content: "\f122"; }
+
+/* line 286, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "\f123"; }
+
+/* line 289, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-location-arrow:before {
+  content: "\f124"; }
+
+/* line 290, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-crop:before {
+  content: "\f125"; }
+
+/* line 291, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-code-fork:before {
+  content: "\f126"; }
+
+/* line 292, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "\f127"; }
+
+/* line 294, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-question:before {
+  content: "\f128"; }
+
+/* line 295, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-info:before {
+  content: "\f129"; }
+
+/* line 296, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-exclamation:before {
+  content: "\f12a"; }
+
+/* line 297, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-superscript:before {
+  content: "\f12b"; }
+
+/* line 298, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-subscript:before {
+  content: "\f12c"; }
+
+/* line 299, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-eraser:before {
+  content: "\f12d"; }
+
+/* line 300, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-puzzle-piece:before {
+  content: "\f12e"; }
+
+/* line 301, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-microphone:before {
+  content: "\f130"; }
+
+/* line 302, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-microphone-slash:before {
+  content: "\f131"; }
+
+/* line 303, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-shield:before {
+  content: "\f132"; }
+
+/* line 304, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-calendar-o:before {
+  content: "\f133"; }
+
+/* line 305, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-fire-extinguisher:before {
+  content: "\f134"; }
+
+/* line 306, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-rocket:before {
+  content: "\f135"; }
+
+/* line 307, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-maxcdn:before {
+  content: "\f136"; }
+
+/* line 308, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-chevron-circle-left:before {
+  content: "\f137"; }
+
+/* line 309, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-chevron-circle-right:before {
+  content: "\f138"; }
+
+/* line 310, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-chevron-circle-up:before {
+  content: "\f139"; }
+
+/* line 311, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-chevron-circle-down:before {
+  content: "\f13a"; }
+
+/* line 312, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-html5:before {
+  content: "\f13b"; }
+
+/* line 313, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-css3:before {
+  content: "\f13c"; }
+
+/* line 314, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-anchor:before {
+  content: "\f13d"; }
+
+/* line 315, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-unlock-alt:before {
+  content: "\f13e"; }
+
+/* line 316, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-bullseye:before {
+  content: "\f140"; }
+
+/* line 317, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-ellipsis-h:before {
+  content: "\f141"; }
+
+/* line 318, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-ellipsis-v:before {
+  content: "\f142"; }
+
+/* line 319, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-rss-square:before {
+  content: "\f143"; }
+
+/* line 320, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-play-circle:before {
+  content: "\f144"; }
+
+/* line 321, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-ticket:before {
+  content: "\f145"; }
+
+/* line 322, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-minus-square:before {
+  content: "\f146"; }
+
+/* line 323, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-minus-square-o:before {
+  content: "\f147"; }
+
+/* line 324, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-level-up:before {
+  content: "\f148"; }
+
+/* line 325, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-level-down:before {
+  content: "\f149"; }
+
+/* line 326, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-check-square:before {
+  content: "\f14a"; }
+
+/* line 327, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-pencil-square:before {
+  content: "\f14b"; }
+
+/* line 328, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-external-link-square:before {
+  content: "\f14c"; }
+
+/* line 329, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-share-square:before {
+  content: "\f14d"; }
+
+/* line 330, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-compass:before {
+  content: "\f14e"; }
+
+/* line 331, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "\f150"; }
+
+/* line 333, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "\f151"; }
+
+/* line 335, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "\f152"; }
+
+/* line 337, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-euro:before,
+.fa-eur:before {
+  content: "\f153"; }
+
+/* line 339, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-gbp:before {
+  content: "\f154"; }
+
+/* line 340, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-dollar:before,
+.fa-usd:before {
+  content: "\f155"; }
+
+/* line 342, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-rupee:before,
+.fa-inr:before {
+  content: "\f156"; }
+
+/* line 344, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "\f157"; }
+
+/* line 348, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "\f158"; }
+
+/* line 351, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-won:before,
+.fa-krw:before {
+  content: "\f159"; }
+
+/* line 353, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "\f15a"; }
+
+/* line 355, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-file:before {
+  content: "\f15b"; }
+
+/* line 356, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-file-text:before {
+  content: "\f15c"; }
+
+/* line 357, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-sort-alpha-asc:before {
+  content: "\f15d"; }
+
+/* line 358, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-sort-alpha-desc:before {
+  content: "\f15e"; }
+
+/* line 359, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-sort-amount-asc:before {
+  content: "\f160"; }
+
+/* line 360, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-sort-amount-desc:before {
+  content: "\f161"; }
+
+/* line 361, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-sort-numeric-asc:before {
+  content: "\f162"; }
+
+/* line 362, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-sort-numeric-desc:before {
+  content: "\f163"; }
+
+/* line 363, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-thumbs-up:before {
+  content: "\f164"; }
+
+/* line 364, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-thumbs-down:before {
+  content: "\f165"; }
+
+/* line 365, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-youtube-square:before {
+  content: "\f166"; }
+
+/* line 366, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-youtube:before {
+  content: "\f167"; }
+
+/* line 367, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-xing:before {
+  content: "\f168"; }
+
+/* line 368, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-xing-square:before {
+  content: "\f169"; }
+
+/* line 369, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-youtube-play:before {
+  content: "\f16a"; }
+
+/* line 370, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-dropbox:before {
+  content: "\f16b"; }
+
+/* line 371, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-stack-overflow:before {
+  content: "\f16c"; }
+
+/* line 372, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-instagram:before {
+  content: "\f16d"; }
+
+/* line 373, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-flickr:before {
+  content: "\f16e"; }
+
+/* line 374, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-adn:before {
+  content: "\f170"; }
+
+/* line 375, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-bitbucket:before {
+  content: "\f171"; }
+
+/* line 376, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-bitbucket-square:before {
+  content: "\f172"; }
+
+/* line 377, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-tumblr:before {
+  content: "\f173"; }
+
+/* line 378, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-tumblr-square:before {
+  content: "\f174"; }
+
+/* line 379, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-long-arrow-down:before {
+  content: "\f175"; }
+
+/* line 380, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-long-arrow-up:before {
+  content: "\f176"; }
+
+/* line 381, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-long-arrow-left:before {
+  content: "\f177"; }
+
+/* line 382, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-long-arrow-right:before {
+  content: "\f178"; }
+
+/* line 383, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-apple:before {
+  content: "\f179"; }
+
+/* line 384, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-windows:before {
+  content: "\f17a"; }
+
+/* line 385, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-android:before {
+  content: "\f17b"; }
+
+/* line 386, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-linux:before {
+  content: "\f17c"; }
+
+/* line 387, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-dribbble:before {
+  content: "\f17d"; }
+
+/* line 388, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-skype:before {
+  content: "\f17e"; }
+
+/* line 389, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-foursquare:before {
+  content: "\f180"; }
+
+/* line 390, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-trello:before {
+  content: "\f181"; }
+
+/* line 391, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-female:before {
+  content: "\f182"; }
+
+/* line 392, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-male:before {
+  content: "\f183"; }
+
+/* line 393, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-gittip:before {
+  content: "\f184"; }
+
+/* line 394, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-sun-o:before {
+  content: "\f185"; }
+
+/* line 395, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-moon-o:before {
+  content: "\f186"; }
+
+/* line 396, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-archive:before {
+  content: "\f187"; }
+
+/* line 397, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-bug:before {
+  content: "\f188"; }
+
+/* line 398, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-vk:before {
+  content: "\f189"; }
+
+/* line 399, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-weibo:before {
+  content: "\f18a"; }
+
+/* line 400, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-renren:before {
+  content: "\f18b"; }
+
+/* line 401, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-pagelines:before {
+  content: "\f18c"; }
+
+/* line 402, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-stack-exchange:before {
+  content: "\f18d"; }
+
+/* line 403, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrow-circle-o-right:before {
+  content: "\f18e"; }
+
+/* line 404, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-arrow-circle-o-left:before {
+  content: "\f190"; }
+
+/* line 405, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "\f191"; }
+
+/* line 407, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-dot-circle-o:before {
+  content: "\f192"; }
+
+/* line 408, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-wheelchair:before {
+  content: "\f193"; }
+
+/* line 409, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-vimeo-square:before {
+  content: "\f194"; }
+
+/* line 410, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "\f195"; }
+
+/* line 412, /Users/user/Dropbox/Web/clients/hatchit/tigershredding/wp-content/themes/tigershredding/bower_components/font-awesome/scss/_icons.scss */
+.fa-plus-square-o:before {
+  content: "\f196"; }
+
+/* line 2, neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 1, base/_shame.sass */
+#menu-header-menu {
+  margin: 0;
+  padding: 0; }
+
+/* line 1, base/_grid.sass */
+.outer-container, .testmonial__box {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 17, bourbon/addons/_clearfix.scss */
+  .outer-container:before, .testmonial__box:before, .outer-container:after, .testmonial__box:after {
+    content: " ";
+    display: table; }
+  /* line 23, bourbon/addons/_clearfix.scss */
+  .outer-container:after, .testmonial__box:after {
+    clear: both; }
+
+/* line 3, base/_grid.sass */
+.row, .nav__mobile-box, .footer__row, .slogan__row, .badges__row, .bloglist__row, .slider__row, .services--row, .contact__row, .testmonial__row {
+  *zoom: 1;
+  display: block;
+  padding: 0 2rem; }
+  /* line 17, bourbon/addons/_clearfix.scss */
+  .row:before, .nav__mobile-box:before, .footer__row:before, .slogan__row:before, .badges__row:before, .bloglist__row:before, .slider__row:before, .services--row:before, .contact__row:before, .testmonial__row:before, .row:after, .nav__mobile-box:after, .footer__row:after, .slogan__row:after, .badges__row:after, .bloglist__row:after, .slider__row:after, .services--row:after, .contact__row:after, .testmonial__row:after {
+    content: " ";
+    display: table; }
+  /* line 23, bourbon/addons/_clearfix.scss */
+  .row:after, .nav__mobile-box:after, .footer__row:after, .slogan__row:after, .badges__row:after, .bloglist__row:after, .slider__row:after, .services--row:after, .contact__row:after, .testmonial__row:after {
+    clear: both; }
+  @media screen and (min-width: tabletopish) {
+    /* line 3, base/_grid.sass */
+    .row, .nav__mobile-box, .footer__row, .slogan__row, .badges__row, .bloglist__row, .slider__row, .services--row, .contact__row, .testmonial__row {
+      padding: 0 1rem; } }
+  @media screen and (min-width: laptopish) {
+    /* line 3, base/_grid.sass */
+    .row, .nav__mobile-box, .footer__row, .slogan__row, .badges__row, .bloglist__row, .slider__row, .services--row, .contact__row, .testmonial__row {
+      padding: 0; } }
+
+/* line 14, base/_grid.sass */
+.col-1 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 12.64237%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .col-1:last-child {
+    margin-right: 0; }
+
+/* line 14, base/_grid.sass */
+.col-2 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 30.11389%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .col-2:last-child {
+    margin-right: 0; }
+
+/* line 14, base/_grid.sass */
+.col-3 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 47.58542%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .col-3:last-child {
+    margin-right: 0; }
+
+/* line 14, base/_grid.sass */
+.col-4 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 65.05695%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .col-4:last-child {
+    margin-right: 0; }
+
+/* line 14, base/_grid.sass */
+.col-5 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 82.52847%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .col-5:last-child {
+    margin-right: 0; }
+
+/* line 14, base/_grid.sass */
+.col-6 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .col-6:last-child {
+    margin-right: 0; }
+
+/* line 14, base/_grid.sass */
+.col-7 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 117.47153%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .col-7:last-child {
+    margin-right: 0; }
+
+/* line 14, base/_grid.sass */
+.col-8 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 134.94305%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .col-8:last-child {
+    margin-right: 0; }
+
+/* line 14, base/_grid.sass */
+.col-9 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 152.41458%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .col-9:last-child {
+    margin-right: 0; }
+
+/* line 14, base/_grid.sass */
+.col-10 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 169.88611%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .col-10:last-child {
+    margin-right: 0; }
+
+/* line 14, base/_grid.sass */
+.col-11 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 187.35763%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .col-11:last-child {
+    margin-right: 0; }
+
+/* line 14, base/_grid.sass */
+.col-12 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 204.82916%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .col-12:last-child {
+    margin-right: 0; }
+
+/* line 17, base/_grid.sass */
+header {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 17, bourbon/addons/_clearfix.scss */
+  header:before, header:after {
+    content: " ";
+    display: table; }
+  /* line 23, bourbon/addons/_clearfix.scss */
+  header:after {
+    clear: both; }
+
+/* line 23, base/_grid.sass */
+.nav__flexbox li {
+  margin-bottom: 0.7rem; }
+
+/* line 23, base/_grid.sass */
+.bloglist__item {
+  margin-bottom: 1rem; }
+
+/* line 23, base/_grid.sass */
+.footer__contact, .block__bloglist, .block__testmonial {
+  margin-bottom: 2rem; }
+
+/* line 27, base/_grid.sass */
+.nav__flexbox li {
+  margin-top: 1.1rem; }
+
+/* line 27, base/_grid.sass */
+.block__bloglist {
+  margin-top: 2rem; }
+
+/* line 35, base/_grid.sass */
+nav li.current_page_item a {
+  padding-bottom: 0.2rem; }
+
+/* line 35, base/_grid.sass */
+.contact__message {
+  padding-bottom: 0.6rem; }
+
+/* line 35, base/_grid.sass */
+.bloglist__item {
+  padding-bottom: 1rem; }
+
+/* line 35, base/_grid.sass */
+.footer__row, .slogan__box, .block__badges, .contact__box {
+  padding-bottom: 2rem; }
+
+/* line 40, base/_grid.sass */
+nav li.current_page_item a {
+  padding-top: 0.2rem; }
+
+/* line 40, base/_grid.sass */
+.services--column {
+  padding-top: 0.8rem; }
+
+/* line 40, base/_grid.sass */
+.footer__row, .slogan__box, .block__badges, .contact__box {
+  padding-top: 2rem; }
+
+/* line 44, base/_grid.sass */
+.bloglist__readmore:after, .testmonial__message--customer:after {
+  padding-left: 0.5rem; }
+
+/* line 44, base/_grid.sass */
+.services--column li:last-child {
+  padding-left: 2rem; }
+
+/* line 1, base/is/_is__text.sass */
+.is__text--bold, h1, h4, nav li, .button--main, .slider__button, .button--secondary, .slider_box:children(n+1) .slider__button, .services--column li, h6, .footer__contact--list, .footer__list, .bloglist__readmore, .contact__message, .contact__number {
+  font-weight: 700; }
+
+/* line 4, base/is/_is__text.sass */
+.is__text--medium, h2 {
+  font-weight: 600; }
+
+/* line 7, base/is/_is__text.sass */
+.is__text--regular, p {
+  font-weight: 400; }
+
+/* line 10, base/is/_is__text.sass */
+.is__text--light, h3, h5, blockquote, .slogan__message p {
+  font-weight: 300; }
+
+/* line 13, base/is/_is__text.sass */
+.is__text--oblique {
+  font-style: oblique;
+  font-style: italic; }
+
+/* line 17, base/is/_is__text.sass */
+.is__text--centered, blockquote, caption, nav li.current_page_item a:before, .button--main, .slider__button, .button--secondary, .slider_box:children(n+1) .slider__button, .badges__company--image, .badges__company--message, .services--column li, .contact__message, .contact__number, .testmonial__message--customer {
+  text-align: center; }
+
+/* line 20, base/is/_is__text.sass */
+.is__text--left {
+  text-align: left; }
+
+/* line 23, base/is/_is__text.sass */
+.is__text--right, .footer__list {
+  text-align: right; }
+
+/* line 26, base/is/_is__text.sass */
+.is__text--uppercase, h4, nav li, .button--main, .slider__button, .button--secondary, .slider_box:children(n+1) .slider__button, .services--column li, caption, .contact__message, .contact__number, .testmonial__message--customer {
+  text-transform: uppercase; }
+
+/* line 29, base/is/_is__text.sass */
+.is__text--size--giga, .contact__number {
+  font-size: 2rem; }
+
+/* line 32, base/is/_is__text.sass */
+.is__text--size--mega {
+  font-size: 1.61rem; }
+
+/* line 35, base/is/_is__text.sass */
+.is__text--size--kilo, .bloglist__title {
+  font-size: 1.2rem; }
+
+/* line 37, base/is/_is__text.sass */
+.is__text--size--milli {
+  font-size: 0.73rem; }
+
+/* line 40, base/is/_is__text.sass */
+.is__text--unbulleted, .footer__social-box ul, .footer__list {
+  list-style-type: none; }
+
+/* line 47, base/is/_is__text.sass */
+.is__text--size--18ish, .contact__message {
+  font-size: 1.1rem; }
+
+/* line 12, base/is/_is__this.sass */
+.is__this--floating--left, .left.button--main, .left.slider__button, .left.button--secondary, .slider_box:children(n+1) .left.slider__button {
+  float: left; }
+
+/* line 16, base/is/_is__this.sass */
+.is__this--floating--right, .right.button--main, .right.slider__button, .right.button--secondary, .slider_box:children(n+1) .right.slider__button, .slogan__video {
+  float: right; }
+
+/* line 19, base/is/_is__this.sass */
+.is__this--centered, .centered.button--main, .centered.slider__button, .centered.button--secondary, .slider_box:children(n+1) .centered.slider__button {
+  margin: auto; }
+
+/* line 23, base/is/_is__this.sass */
+.is__this--inline, nav li, .services--column li, .testmonial__message--customer:before, .testmonial__message--customer:after {
+  display: inline-block; }
+
+/* line 26, base/is/_is__this.sass */
+.is__this--border-radius, .button--main, .slider__button, .button--secondary, .slider_box:children(n+1) .slider__button, .services__logo-box {
+  border-radius: 0.3rem; }
+
+/* line 28, base/is/_is__this.sass */
+.is__this--bordered, nav li {
+  border-bottom-width: 0.3rem;
+  border-bottom-style: solid; }
+
+/* line 5, base/is/_is__colors.sass */
+.is__text--c-main, h1, .bloglist__title {
+  color: #604573; }
+
+/* line 9, base/is/_is__colors.sass */
+.is__background--c-main, .button--main, .slider__button, .block__testmonial {
+  background: #604573; }
+
+/* line 12, base/is/_is__colors.sass */
+.is__border--c-main {
+  border-color: #604573; }
+
+/* line 5, base/is/_is__colors.sass */
+.is__text--c-secondary, .footer__contact--heading, .bloglist__readmore, .bloglist__readmore:after {
+  color: #e7c730; }
+
+/* line 9, base/is/_is__colors.sass */
+.is__background--c-secondary, .button--secondary, .slider_box:children(n+1) .slider__button, .block__contact {
+  background: #e7c730; }
+
+/* line 12, base/is/_is__colors.sass */
+.is__border--c-secondary, nav li {
+  border-color: #e7c730; }
+
+/* line 5, base/is/_is__colors.sass */
+.is__text--c-white, nav li.current_page_item, .button--main, .slider__button, .button--secondary, .slider_box:children(n+1) .slider__button, .footer__contact--list, .footer__list, .slogan__message p, .services--column li, .contact__message, .contact__number, .testmonial__message blockquote, .testmonial__message--customer {
+  color: white; }
+
+/* line 9, base/is/_is__colors.sass */
+.is__background--c-white {
+  background: white; }
+
+/* line 12, base/is/_is__colors.sass */
+.is__border--c-white, nav li.current_page_item, nav li.current_page_item:hover {
+  border-color: white; }
+
+/* line 5, base/is/_is__colors.sass */
+.is__text--c-black, nav li, nav li.current_page_item a:before, .badges__company--message {
+  color: #292929; }
+
+/* line 9, base/is/_is__colors.sass */
+.is__background--c-black, .nav__mobile--icon, footer, .services__logo-box {
+  background: #292929; }
+
+/* line 12, base/is/_is__colors.sass */
+.is__border--c-black, nav li:hover {
+  border-color: #292929; }
+
+/* line 5, base/is/_is__colors.sass */
+.is__text--c-gray {
+  color: #a8a8a8; }
+
+/* line 9, base/is/_is__colors.sass */
+.is__background--c-gray {
+  background: #a8a8a8; }
+
+/* line 12, base/is/_is__colors.sass */
+.is__border--c-gray {
+  border-color: #a8a8a8; }
+
+/* line 5, base/is/_is__colors.sass */
+.is__text--c-twitter {
+  color: #78cdf0; }
+
+/* line 9, base/is/_is__colors.sass */
+.is__background--c-twitter {
+  background: #78cdf0; }
+
+/* line 12, base/is/_is__colors.sass */
+.is__border--c-twitter {
+  border-color: #78cdf0; }
+
+/* line 5, base/is/_is__colors.sass */
+.is__text--c-facebook {
+  color: #537bbd; }
+
+/* line 9, base/is/_is__colors.sass */
+.is__background--c-facebook {
+  background: #537bbd; }
+
+/* line 12, base/is/_is__colors.sass */
+.is__border--c-facebook {
+  border-color: #537bbd; }
+
+/* line 5, base/is/_is__colors.sass */
+.is__text--c-linkedin {
+  color: #2085c7; }
+
+/* line 9, base/is/_is__colors.sass */
+.is__background--c-linkedin {
+  background: #2085c7; }
+
+/* line 12, base/is/_is__colors.sass */
+.is__border--c-linkedin {
+  border-color: #2085c7; }
+
+/* line 3, base/_type--sizing.sass */
+html, body {
+  line-height: 1.61em;
+  font-size: 85%; }
+  @media screen and (min-width: 30rem) {
+    /* line 3, base/_type--sizing.sass */
+    html, body {
+      font-size: 90%; } }
+  @media screen and (min-width: 58rem) {
+    /* line 3, base/_type--sizing.sass */
+    html, body {
+      font-size: 110%; } }
+
+/* line 19, base/_type--sizing.sass */
+p {
+  font-size: 1rem;
+  font-family: "proxima-nova", sans-serif; }
+
+/* line 23, base/_type--sizing.sass */
+small {
+  font-size: 0.7rem; }
+
+/* line 30, base/_type--sizing.sass */
+h1, h2, h3, h4, nav li, .button--main, .slider__button, .button--secondary, .slider_box:children(n+1) .slider__button, .services--column li, h5, h6 {
+  line-height: 1.3em; }
+
+/* line 35, base/_type--sizing.sass */
+h1 {
+  font-size: 2.6rem; }
+
+/* line 37, base/_type--sizing.sass */
+h2 {
+  font-size: 2.089rem; }
+
+/* line 40, base/_type--sizing.sass */
+h3 {
+  font-size: 1.2911rem; }
+
+/* line 44, base/_type--sizing.sass */
+h4, nav li, .button--main, .slider__button, .button--secondary, .slider_box:children(n+1) .slider__button, .services--column li {
+  font-size: 0.79796rem; }
+
+/* line 48, base/_type--sizing.sass */
+h5 {
+  font-size: 0.49318rem; }
+
+/* line 52, base/_type--sizing.sass */
+h6 {
+  font-size: 0.49318rem; }
+
+/* line 56, base/_type--sizing.sass */
+hr {
+  margin: 0; }
+
+/* line 61, base/_type--sizing.sass */
+blockquote {
+  font-size: 2.089rem;
+  line-height: 1.4em; }
+
+/* line 65, base/_type--sizing.sass */
+caption {
+  font-size: 1rem; }
+
+/* line 2, base/_type--appearance.sass */
+html, body {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 400; }
+
+/* line 12, base/_type--appearance.sass */
+p {
+  font-family: "proxima-nova", sans-serif; }
+
+/* line 17, base/_type--appearance.sass */
+small {
+  font-size: 0.7rem; }
+
+/* line 22, base/_type--appearance.sass */
+h1, h2, h3, h4, nav li, .button--main, .slider__button, .button--secondary, .slider_box:children(n+1) .slider__button, .services--column li, h5, h6 {
+  -webkit-font-smoothing: antialiased; }
+
+/* line 41, base/_type--appearance.sass */
+hr {
+  margin: 0; }
+
+/* line 55, base/_type--appearance.sass */
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/* line 1, components/_nav.sass */
+nav {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 17, bourbon/addons/_clearfix.scss */
+  nav:before, nav:after {
+    content: " ";
+    display: table; }
+  /* line 23, bourbon/addons/_clearfix.scss */
+  nav:after {
+    clear: both; }
+  /* line 20, components/_nav.sass */
+  nav li.current_page_item a {
+    position: relative; }
+    /* line 25, components/_nav.sass */
+    nav li.current_page_item a:before {
+      content: "▾";
+      position: absolute;
+      font-size: 2.8rem;
+      width: 100%;
+      top: -1.4rem;
+      visibility: hidden; }
+      @media screen and (min-width: 58rem) {
+        /* line 25, components/_nav.sass */
+        nav li.current_page_item a:before {
+          visibility: visible; } }
+
+@media screen and (min-width: 0rem) {
+  /* line 40, components/_nav.sass */
+  .nav__responsive, .nav__flexbox ul {
+    display: none; } }
+@media screen and (min-width: 58rem) {
+  /* line 40, components/_nav.sass */
+  .nav__responsive, .nav__flexbox ul {
+    display: flex; } }
+
+@media screen and (min-width: 0rem) {
+  /* line 49, components/_nav.sass */
+  #nav__mobile-toggle:checked .nav__responsive, #nav__mobile-toggle:checked .nav__flexbox ul, .nav__flexbox #nav__mobile-toggle:checked ul {
+    display: block; } }
+
+/* line 53, components/_nav.sass */
+.nav__flexbox {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .nav__flexbox:last-child {
+    margin-right: 0; }
+  /* line 56, components/_nav.sass */
+  .nav__flexbox ul {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-flow: column wrap; }
+    @media screen and (min-width: 58rem) {
+      /* line 56, components/_nav.sass */
+      .nav__flexbox ul {
+        flex-flow: row wrap; } }
+
+@media screen and (min-width: 58rem) {
+  /* line 70, components/_nav.sass */
+  .nav__mobile-box {
+    display: none; } }
+
+/* line 75, components/_nav.sass */
+.nav__mobile-toggle {
+  display: none; }
+
+/* line 80, components/_nav.sass */
+.nav__mobile-logo {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 65.05695%;
+  font-size: 2rem; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .nav__mobile-logo:last-child {
+    margin-right: 0; }
+
+/* line 84, components/_nav.sass */
+.nav__mobile--icon {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 30.11389%;
+  font-size: 3rem; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .nav__mobile--icon:last-child {
+    margin-right: 0; }
+
+/* line 1, components/_ribbon.sass */
+.block__ribbon {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 17, bourbon/addons/_clearfix.scss */
+  .block__ribbon:before, .block__ribbon:after {
+    content: " ";
+    display: table; }
+  /* line 23, bourbon/addons/_clearfix.scss */
+  .block__ribbon:after {
+    clear: both; }
+
+/* line 4, components/_ribbon.sass */
+.ribbon__row {
+  *zoom: 1;
+  display: block; }
+  /* line 17, bourbon/addons/_clearfix.scss */
+  .ribbon__row:before, .ribbon__row:after {
+    content: " ";
+    display: table; }
+  /* line 23, bourbon/addons/_clearfix.scss */
+  .ribbon__row:after {
+    clear: both; }
+
+/* line 1, components/_zigzag.sass */
+.component__zigzag, .block__contact {
+  position: relative; }
+  /* line 4, components/_zigzag.sass */
+  .component__zigzag:before, .block__contact:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1rem;
+    width: 100%;
+    height: 1rem;
+    background-size: 1rem 1rem;
+    background-image: -webkit-linear-gradient( #2b3a48 0%, transparent 0%), -webkit-linear, 135deg, #272220 33.33%, transparent 33.33%-gradient( 0), -webkit-#272220-gradient( linear, 45deg, #272220 33.33%, #2b3a48 33.33%);
+    background-image: linear-gradient( #2b3a48 0%, transparent 0%), linear, 135deg, #272220 33.33%, transparent 33.33%-gradient( 0), #272220-gradient( linear, 45deg, #272220 33.33%, #2b3a48 33.33%); }
+
+/* line 1, components/_button.sass */
+.button--main, .slider__button, .button--secondary, .slider_box:children(n+1) .slider__button {
+  padding: 1.3rem;
+  width: 12.5rem;
+  height: 3.5rem; }
+
+/* line 1, ui/_body.sass */
+body {
+  margin: 0 !important;
+  border: 0;
+  padding: 0;
+  background: #f3f3f3; }
+
+/* line 4, ui/_footer.sass */
+.footer__box {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 17, bourbon/addons/_clearfix.scss */
+  .footer__box:before, .footer__box:after {
+    content: " ";
+    display: table; }
+  /* line 23, bourbon/addons/_clearfix.scss */
+  .footer__box:after {
+    clear: both; }
+
+/* line 11, ui/_footer.sass */
+.footer__contact--list, .footer__list {
+  font-size: 0.79796rem; }
+
+/* line 17, ui/_footer.sass */
+.footer__contact {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%; }
+  @media screen and (min-width: 20rem) {
+    /* line 17, ui/_footer.sass */
+    .footer__contact {
+      margin-bottom: 0; } }
+  /* line 40, neat/grid/_span-columns.scss */
+  .footer__contact:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 45rem) {
+    /* line 17, ui/_footer.sass */
+    .footer__contact {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      /* line 40, neat/grid/_span-columns.scss */
+      .footer__contact:last-child {
+        margin-right: 0; } }
+
+/* line 25, ui/_footer.sass */
+.footer__contact--list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 31, ui/_footer.sass */
+.footer__contact--heading {
+  font-size: 0.79796rem; }
+
+/* line 35, ui/_footer.sass */
+.footer__logo-box {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .footer__logo-box:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 45rem) {
+    /* line 35, ui/_footer.sass */
+    .footer__logo-box {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      /* line 40, neat/grid/_span-columns.scss */
+      .footer__logo-box:last-child {
+        margin-right: 0; } }
+
+/* line 40, ui/_footer.sass */
+.footer__logo {
+  height: 6.5rem; }
+
+/* line 43, ui/_footer.sass */
+.footer__menu {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .footer__menu:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 45rem) {
+    /* line 43, ui/_footer.sass */
+    .footer__menu {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      /* line 40, neat/grid/_span-columns.scss */
+      .footer__menu:last-child {
+        margin-right: 0; } }
+
+/* line 48, ui/_footer.sass */
+.footer__social-box {
+  width: 100%; }
+
+/* line 3, ui/_site-logo.sass */
+.site-logo--image, .site-logo--image--dark, .services__logo--image {
+  width: 100%;
+  height: 5rem;
+  background: url("img/site-wide/site-logo.png") no-repeat;
+  background-size: contain;
+  background-position: center center; }
+
+/* line 10, ui/_site-logo.sass */
+.site-logo--image--dark, .services__logo--image {
+  background: url("img/site-wide/site-logo--dark.png") no-repeat; }
+
+/* line 1, ui/_section-slogan.sass */
+.block__slogan {
+  background: url("img/site-wide/bg__slogan.png") no-repeat center center;
+  background-size: cover; }
+
+/* line 5, ui/_section-slogan.sass */
+.slogan__box {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 17, bourbon/addons/_clearfix.scss */
+  .slogan__box:before, .slogan__box:after {
+    content: " ";
+    display: table; }
+  /* line 23, bourbon/addons/_clearfix.scss */
+  .slogan__box:after {
+    clear: both; }
+
+/* line 11, ui/_section-slogan.sass */
+.slogan__video-box {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .slogan__video-box:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 45rem) {
+    /* line 11, ui/_section-slogan.sass */
+    .slogan__video-box {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      /* line 40, neat/grid/_span-columns.scss */
+      .slogan__video-box:last-child {
+        margin-right: 0; } }
+
+/* line 16, ui/_section-slogan.sass */
+.slogan__video {
+  width: 100%;
+  height: 14rem; }
+
+/* line 21, ui/_section-slogan.sass */
+.slogan__message {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .slogan__message:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 45rem) {
+    /* line 21, ui/_section-slogan.sass */
+    .slogan__message {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      /* line 40, neat/grid/_span-columns.scss */
+      .slogan__message:last-child {
+        margin-right: 0; } }
+  /* line 26, ui/_section-slogan.sass */
+  .slogan__message p {
+    font-size: 1.7rem; }
+
+/* line 1, ui/_section-badges.sass */
+.block__badges {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 17, bourbon/addons/_clearfix.scss */
+  .block__badges:before, .block__badges:after {
+    content: " ";
+    display: table; }
+  /* line 23, bourbon/addons/_clearfix.scss */
+  .block__badges:after {
+    clear: both; }
+
+/* line 8, ui/_section-badges.sass */
+.badges__items {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 30.11389%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .badges__items:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 45rem) {
+    /* line 8, ui/_section-badges.sass */
+    .badges__items {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      border-left: 0.2rem solid #a8a8a8;
+      padding-top: 1.1rem;
+      height: 12.4rem; }
+      /* line 40, neat/grid/_span-columns.scss */
+      .badges__items:last-child {
+        margin-right: 0; }
+      /* line 16, ui/_section-badges.sass */
+      .badges__items:first-child {
+        border: none; } }
+
+/* line 21, ui/_section-badges.sass */
+.badges__company--image {
+  min-height: 10rem;
+  width: 100%; }
+  @media screen and (min-width: 30rem) {
+    /* line 21, ui/_section-badges.sass */
+    .badges__company--image {
+      min-height: inherit; } }
+  @media screen and (min-width: 0rem) {
+    /* line 27, ui/_section-badges.sass */
+    .badges__company--image img {
+      width: 25vw; } }
+  @media screen and (min-width: 30rem) {
+    /* line 27, ui/_section-badges.sass */
+    .badges__company--image img {
+      max-width: 140px; }
+      /* line 34, ui/_section-badges.sass */
+      .badges__company--image img.aaa {
+        max-width: 119px; } }
+
+@media screen and (min-width: 0rem) {
+  /* line 37, ui/_section-badges.sass */
+  .badges__company--message {
+    display: none; } }
+@media screen and (min-width: 30rem) {
+  /* line 37, ui/_section-badges.sass */
+  .badges__company--message {
+    display: block; } }
+/* line 45, ui/_section-badges.sass */
+.badges__company--message p {
+  font-size: 0.75rem;
+  line-height: 1.3em; }
+
+/* line 1, ui/_section-bloglist.sass */
+.block__bloglist {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 17, bourbon/addons/_clearfix.scss */
+  .block__bloglist:before, .block__bloglist:after {
+    content: " ";
+    display: table; }
+  /* line 23, bourbon/addons/_clearfix.scss */
+  .block__bloglist:after {
+    clear: both; }
+
+/* line 8, ui/_section-bloglist.sass */
+.bloglist__item {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 65.05695%;
+  margin-left: 17.47153%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  /* line 40, neat/grid/_span-columns.scss */
+  .bloglist__item:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 45rem) {
+    /* line 8, ui/_section-bloglist.sass */
+    .bloglist__item {
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin: 0;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      border-left: 1px solid rgba(0, 0, 0, 0.2);
+      padding-left: 1.6rem; }
+      /* line 40, neat/grid/_span-columns.scss */
+      .bloglist__item:last-child {
+        margin-right: 0; }
+      /* line 27, ui/_section-bloglist.sass */
+      .bloglist__item:first-child {
+        border: none; } }
+
+/* line 34, ui/_section-bloglist.sass */
+.bloglist__readmore {
+  font-size: 0.85rem; }
+  /* line 38, ui/_section-bloglist.sass */
+  .bloglist__readmore:after {
+    content: ">";
+    font-size: 0.85rem; }
+
+/* line 2, ui/_section-slider.sass */
+.slider__box {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 17, bourbon/addons/_clearfix.scss */
+  .slider__box:before, .slider__box:after {
+    content: " ";
+    display: table; }
+  /* line 23, bourbon/addons/_clearfix.scss */
+  .slider__box:after {
+    clear: both; }
+
+/* line 4, ui/_section-slider.sass */
+.slider__background {
+  position: absolute; }
+
+/* line 8, ui/_section-slider.sass */
+.slider__column {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .slider__column:last-child {
+    margin-right: 0; }
+
+/* line 1, ui/_ribbon-services.sass */
+.block__services--ribbon {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  display: none; }
+  /* line 17, bourbon/addons/_clearfix.scss */
+  .block__services--ribbon:before, .block__services--ribbon:after {
+    content: " ";
+    display: table; }
+  /* line 23, bourbon/addons/_clearfix.scss */
+  .block__services--ribbon:after {
+    clear: both; }
+  @media screen and (min-width: 45rem) {
+    /* line 1, ui/_ribbon-services.sass */
+    .block__services--ribbon {
+      display: block; } }
+
+/* line 12, ui/_ribbon-services.sass */
+.services__logo-column {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .services__logo-column:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 45rem) {
+    /* line 12, ui/_ribbon-services.sass */
+    .services__logo-column {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      /* line 40, neat/grid/_span-columns.scss */
+      .services__logo-column:last-child {
+        margin-right: 0; } }
+
+/* line 18, ui/_ribbon-services.sass */
+.services__logo-box {
+  width: 10rem;
+  padding: 0.7rem 0;
+  margin: -0.7rem auto -0.7rem; }
+
+/* line 25, ui/_ribbon-services.sass */
+.services__logo--image {
+  background-position: center center;
+  height: 5.6rem; }
+
+/* line 30, ui/_ribbon-services.sass */
+.services--column {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .services--column:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 45rem) {
+    /* line 30, ui/_ribbon-services.sass */
+    .services--column {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      /* line 40, neat/grid/_span-columns.scss */
+      .services--column:last-child {
+        margin-right: 0; } }
+  /* line 37, ui/_ribbon-services.sass */
+  .services--column ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+
+/* line 5, ui/_ribbon-contact.sass */
+.contact__box {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 17, bourbon/addons/_clearfix.scss */
+  .contact__box:before, .contact__box:after {
+    content: " ";
+    display: table; }
+  /* line 23, bourbon/addons/_clearfix.scss */
+  .contact__box:after {
+    clear: both; }
+
+/* line 11, ui/_ribbon-contact.sass */
+.contact__column {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .contact__column:last-child {
+    margin-right: 0; }
+
+/* line 14, ui/_ribbon-contact.sass */
+.contact__message, .contact__number {
+  margin: 0; }
+
+/* line 8, ui/_ribbon-testmonial.sass */
+.testmonial__message {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%; }
+  /* line 40, neat/grid/_span-columns.scss */
+  .testmonial__message:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 58rem) {
+    /* line 8, ui/_ribbon-testmonial.sass */
+    .testmonial__message {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 40, neat/grid/_span-columns.scss */
+      .testmonial__message:last-child {
+        margin-right: 0; } }
+  /* line 13, ui/_ribbon-testmonial.sass */
+  .testmonial__message blockquote {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto; }
+
+/* line 26, ui/_ribbon-testmonial.sass */
+.testmonial__message--customer:before {
+  content: "-";
+  padding-right: 0.5rem; }
+/* line 30, ui/_ribbon-testmonial.sass */
+.testmonial__message--customer:after {
+  content: "-"; }
+
+/* line 11, plugins/traffic-light.scss */
+.traffic-light {
+  position: fixed;
+  z-index: 10000000; }
+  /* line 15, plugins/traffic-light.scss */
+  .traffic-light:after {
+    display: block;
+    position: relative;
+    left: 0rem;
+    top: 1rem;
+    width: 100%;
+    background: white;
+    border: 0.3rem solid rgba(255, 255, 255, 0);
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    line-height: 0.6rem;
+    padding-left: .2rem;
+    padding-right: .3rem;
+    font-size: .6rem;
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0px 1px 0px #8c8c8c, 0px 2px 0px #8c8c8c, 0px 3px 0px #8c8c8c, 0px 4px 0px #8c8c8c, 0px 5px 0px #8c8c8c; }
+    @media only screen and (min-width: 0rem) {
+      /* line 15, plugins/traffic-light.scss */
+      .traffic-light:after {
+        content: "phoneish"; } }
+    @media only screen and (min-width: 20rem) {
+      /* line 15, plugins/traffic-light.scss */
+      .traffic-light:after {
+        content: "phabletish"; } }
+    @media only screen and (min-width: 30rem) {
+      /* line 15, plugins/traffic-light.scss */
+      .traffic-light:after {
+        content: "tabletish"; } }
+    @media only screen and (min-width: 45rem) {
+      /* line 15, plugins/traffic-light.scss */
+      .traffic-light:after {
+        content: "tabletopish"; } }
+    @media only screen and (min-width: 58rem) {
+      /* line 15, plugins/traffic-light.scss */
+      .traffic-light:after {
+        content: "laptopish"; } }
+    @media only screen and (min-width: 100rem) {
+      /* line 15, plugins/traffic-light.scss */
+      .traffic-light:after {
+        content: "cinemaish"; } }
+
+/* line 54, plugins/traffic-light.scss */
+#wp-admin-bar-site-name a:after:after {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  background: white;
+  line-height: 0.6rem;
+  padding-left: .2rem;
+  padding-right: .3rem;
+  font-size: .6rem;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 0rem) {
+    /* line 54, plugins/traffic-light.scss */
+    #wp-admin-bar-site-name a:after:after {
+      content: "phoneish"; } }
+  @media only screen and (min-width: 20rem) {
+    /* line 54, plugins/traffic-light.scss */
+    #wp-admin-bar-site-name a:after:after {
+      content: "phabletish"; } }
+  @media only screen and (min-width: 30rem) {
+    /* line 54, plugins/traffic-light.scss */
+    #wp-admin-bar-site-name a:after:after {
+      content: "tabletish"; } }
+  @media only screen and (min-width: 45rem) {
+    /* line 54, plugins/traffic-light.scss */
+    #wp-admin-bar-site-name a:after:after {
+      content: "tabletopish"; } }
+  @media only screen and (min-width: 58rem) {
+    /* line 54, plugins/traffic-light.scss */
+    #wp-admin-bar-site-name a:after:after {
+      content: "laptopish"; } }
+  @media only screen and (min-width: 100rem) {
+    /* line 54, plugins/traffic-light.scss */
+    #wp-admin-bar-site-name a:after:after {
+      content: "cinemaish"; } }
+
+/*# sourceMappingURL=tigershredding.css.map */

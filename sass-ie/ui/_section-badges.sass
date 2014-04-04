@@ -1,0 +1,48 @@
+.block__badges
+
+.badges__box
+  +outer-container
+  @extend %pt-20
+  @extend %pb-20
+
+.badges__row
+  @extend .row
+.badges__items
+  +span-columns(4 of 12)
+
+  border-left: .2rem solid #a8a8a8
+  padding-top: 1.1rem
+
+  &:first-child
+    border: none
+
+  height: 12.4rem
+
+.badges__company--image
+  width: 100%
+  @extend .is__text--centered
+  img
+    max-width: 140px
+
+    &.aaa
+      max-width: 119px
+
+
+.badges__company--aaa
+  img
+    width: 76px !important
+    height: 89px !important
+
+  a
+    margin: 0 auto
+    width: 6rem
+    display: block
+
+.badges__company--message
+  @extend .is__text--centered
+  @extend .is__text--c-black
+  display: block
+
+  p
+    font-size: .75rem
+    line-height: 1.3em

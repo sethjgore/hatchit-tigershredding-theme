@@ -21,11 +21,6 @@ module.exports = {
       'js/ios.js':['js/parser.js', 'js/tokenizer.js', 'js/vminpoly.js'],
     }
   },
-  pySelect:{
-    files: {
-      'js/selectivizr.js':['bower_components/selectivizr/selectivizr.js']
-    }
-  },
   pyRem:{
     options:{
        mangle: false,
@@ -41,7 +36,16 @@ module.exports = {
       beautify: true
     },
     files: {
-      'js/respond.js':['bower_components/respond/src/respond.js']
+      'js/mediaqueries.js':['bower_components/css3-mediaqueries-js/css3-mediaqueries.js']
+    },
+  },
+  pyShiv:{
+      options:{
+       mangle: false,
+      beautify: true
+    },
+    files: {
+      'js/html5shiv.js':['bower_components/html5shiv/dist/html5shiv.js']
     },
   }
 }

@@ -17,5 +17,17 @@ module.exports = {
       sourcemap: true,
       loadPath: 'bower_components'
     }
-  }
+  },
+  ie: {
+    files: {
+      'sass-ie/style.css':'sass-ie/style.sass',
+      'sass-ie/shame/ie.css' : 'sass-ie/shame/ie.sass'
+    },
+    options: {
+      lineNumbers: false,
+      sourcemap: false,
+      loadPath: 'bower_components'
+    }
+  },
+
 }

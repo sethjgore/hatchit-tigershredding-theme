@@ -1,0 +1,78 @@
+@import "../bourbon/bourbon"
+@import "../neat/neat-helpers"
+@import "../base/breakpoints"
+@import "../neat/neat"
+
+// Company Information Banner
+.companyinfo__flexbox
+  ul
+    display: block
+    +row
+
+  li
+    +span-columns(6 of 12)
+
+.withlogo
+  .withlogo__placeholder
+    &:after
+      top: 0rem
+  .companyinfo__first
+    +shift(2)
+
+  .companyinfo__flexbox
+    li
+      +span-columns(5 of 12)
+
+  .companyinfo__text
+    +media($laptopish)
+    .left
+      padding-right: 1.5rem
+    .right
+      padding-left: 1.5rem
+
+    +media($halflaptopish)
+      .left
+        padding-right: inherit
+      .right
+        padding-left: inherit
+
+
+// Navigation Bar
+
+
+.nav__flexbox
+  ul
+    +media($laptopish)
+      display: block
+
+  li
+
+    +media($laptopish)
+      font-size: .6rem
+      margin-right: .5rem
+
+      &:first-child
+        margin-left: 1rem
+
+    +media($halflaptopish)
+      font-size: .7rem
+      margin-right: .4rem
+      margin-left: .4rem
+
+      &:last-child
+        margin-right: 0
+
+
+.nav__flexbox.j-checked
+
+  ul
+    +media($onlymobileish)
+      display: block
+      margin-top: 1.1rem
+      width: 100%
+
+
+  li
+    +media($onlymobileish)
+      display: block
+      text-align: center

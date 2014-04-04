@@ -1,0 +1,36 @@
+.block__testmonial
+  @extend .is__background--c-main
+  @extend %mb-20
+.testmonial__box
+  @extend .outer-container
+.testmonial__row
+  @extend .row
+.testmonial__message
+  +span-columns(12 of 12)
+
+  blockquote
+    @extend .is__text--c-white
+    max-width: 40rem
+    margin-left: auto
+    margin-right: auto
+
+
+.testmonial__message--text
+.testmonial__message--customer
+  @extend .is__text--centered
+  @extend .is__text--uppercase
+  @extend .is__text--c-white
+
+  &:before
+    content: "-"
+    @extend .is__this--inline
+    padding-right: .5rem
+  &:after
+    content: "-"
+    @extend .is__this--inline
+    @extend %pl-5
+
+
+
+
+

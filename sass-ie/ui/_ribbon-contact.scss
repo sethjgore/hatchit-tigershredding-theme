@@ -1,0 +1,50 @@
+.block__contact{
+  @extend .is__background--c-secondary;
+}
+.contact__box{
+  @include outer-container;
+  @extend %pt-20;
+  @extend %pb-20;
+}
+.contact__row{
+  @extend .row;
+}
+.contact__column{
+  @include span-columns(6 of 12);
+
+  &.map__neighbor{
+    padding-top: 5.8rem;
+  }
+
+  .acf-map{
+    height: 300px;
+  }
+}
+
+
+%contact--text{
+  @extend .is__text--centered;
+  @extend .is__text--uppercase;
+  @extend .is__text--bold;
+  margin: 0;
+}
+
+.contact__message{
+  @extend %contact--text;
+  @extend .is__text--c-white;
+  @extend .is__text--size--18ish;
+  @extend %pb-6;
+}
+.contact__number{
+  @extend %contact--text;
+  @extend .is__text--c-white;
+  @extend .is__text--size--giga;
+  @extend %pb-3
+}
+
+.contact__email{
+  @extend %contact--text;
+  @extend .is__text--size--18ish;
+  @extend %pb-6;
+  @extend .is__text--c-main;
+}

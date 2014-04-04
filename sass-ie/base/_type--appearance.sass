@@ -1,0 +1,74 @@
+//CATEGORY -- Document & Body Fonts
+html,body
+
+  //_fonts.sass holds all font-family naming instances
+  font-family: $theme-font
+
+  //Proxima Nova [TypeKit] 400 = Regular
+  font-weight: 400
+  @extend .is__text--c-black
+
+
+//CATEGORY --- Paragraph & Baseline fonts
+p
+  //redundant but makes sure p is using the right weight
+  font-family: $theme-font
+  @extend .is__text--regular
+
+small
+  font-size: .7rem
+
+
+//CATEGORY --- Headers
+h1,h2,h3,h4,h5,h6
+  -webkit-font-smoothing: antialiased
+
+h1
+  @extend .is__text--bold
+  @extend .is__text--c-main
+
+h2
+  @extend .is__text--medium
+h3
+  @extend .is__text--light
+  @extend .is__this--bordered
+  @extend .is__border--c-main
+h4
+  @extend .is__text--bold
+  @extend .is__text--uppercase
+h5
+  @extend .is__text--light
+h6
+  @extend .is__text--bold
+
+hr
+  margin: 0
+
+
+//CATEGORY --- Components & Other type tags
+
+blockquote
+  @extend .is__text--centered
+  @extend .is__text--light
+
+caption
+  @extend .is__text--uppercase
+  @extend .is__text--centered
+
+a
+  text-decoration: none
+  color: inherit
+
+input, textarea
+  line-height: 2.3rem
+  padding: 0.2rem 1rem
+  border-radius: 0.3rem
+  border-width: 1px
+  border-style: solid
+  @extend .is__border--c-gray-light
+  @extend .is__text--c-gray
+  font-size: .8rem
+
+  &:focus
+    outline: none !important
+    @extend .is__border--c-main

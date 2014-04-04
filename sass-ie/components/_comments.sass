@@ -1,0 +1,65 @@
+.block__comments
+  +row
+
+.comments__box
+  +row
+
+  border-bottom-width: 1px
+  border-bottom-style: solid
+  @extend .is__border--c-gray-light
+  padding: 2rem 0 1.2rem 0
+
+.comments__title
+  border: none
+  @extend .is__text--c-main
+
+.comments__single
+  padding: 0
+  font-size: 1rem
+  @extend .is__text--c-comments
+
+  *
+    @extend .is__text--unbulleted
+
+.comments__reply
+  @extend .is__text--c-main
+  padding-left: 1rem
+
+.comments__avatar
+  +span-columns(2 of 12)
+  img
+    $img-size: 5rem
+    width: $img-size
+    height: $img-size
+    border-radius: $img-size*2
+
+.comments__content
+  +span-columns(10 of 12)
+
+// COMMENTS FORM
+.comments__form
+  +row
+
+.cform__field
+  +span-columns(12)
+
+.comment-reply-title
+  @extend .comments__title
+  margin-top: 3.5rem
+
+.cform__email, .cform__author
+  @extend %pb-12
+  +span-columns(6 of 12)
+
+
+  input
+    width: 100%
+.cform__email
+  +omega
+
+.form-submit
+  +span-columns(12)
+  #submit
+    float: right
+    @extend .button--main
+    @extend .button--small

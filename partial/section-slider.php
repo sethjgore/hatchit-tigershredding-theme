@@ -18,7 +18,7 @@
       <div class="slider__box">
         <div class="slider__column <?php the_sub_field('text_position'); ?>">
           <div class="slider__title <?php the_sub_field('title_color'); ?>">
-          <img src="<?php the_sub_field('title_image'); ?>">
+            <img src="<?php the_sub_field('title_image'); ?>" onerror="this.parentNode.removeChild(this)">
           <?php the_sub_field('title'); ?></div>
           <div class="slider__message first"><?php the_sub_field('message'); ?></div>
 

@@ -1,0 +1,46 @@
+.outer-container
+  +outer-container
+
+.row
+  +row
+  padding: 0 1rem
+
+@for $i from 1 through 12
+  .col-#{$i}
+    +span-columns($i)
+
+header
+  +outer-container
+
+
+//LAYOUT MARGINS & PADDINGS
+@for $i from 1 through 30
+  %mb-#{$i}
+    margin-bottom: 0.1rem * $i
+
+@for $i from 1 through 30
+  %mt-#{$i}
+    margin-top: 0.1rem * $i
+
+@for $i from 1 through 30
+  %ml-#{$i}
+    margin-left: 0.1rem * $i
+
+@for $i from 1 through 30
+  %pb-#{$i}
+    padding-bottom: 0.1rem * $i
+
+//Below is for strict exceptions
+@for $i from 1 through 30
+  %pt-#{$i}
+    padding-top: 0.1rem * $i
+
+@for $i from 1 through 30
+  %pl-#{$i}
+    padding-left: 0.1rem * $i
+
+//Element Width
+@for $i from 75 through 250
+  %ew-#{$i}
+    width: 1px * $i
+    width: 0.1rem * $i

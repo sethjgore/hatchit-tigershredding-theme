@@ -1,0 +1,192 @@
+.zz_secondary{
+  position: relative;
+  background: #e7c730;
+}
+
+.zz_secondary:before{
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      #e7c730 33.333%, #e7c730 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      #e7c730 33.333%, #e7c730 66.667%,
+      transparent 66.667%
+    );
+  background-size: 20px 40px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 10px;
+}
+
+.zz_white{
+  position: relative;
+  background: #ffffff;
+}
+
+.zz_white:before{
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      #ffffff 33.333%, #ffffff 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      #ffffff 33.333%, #ffffff 66.667%,
+      transparent 66.667%
+    );
+  background-size: 20px 40px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 10px;
+}
+
+.zz_gray{
+  position: relative;
+  background: #a8a8a8;
+}
+
+.zz_gray:before{
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      #a8a8a8 33.333%, #a8a8a8 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      #a8a8a8 33.333%, #a8a8a8 66.667%,
+      transparent 66.667%
+    );
+  background-size: 20px 40px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 10px;
+}
+
+.zz_main{
+  position: relative;
+  background: #604573;
+}
+
+.zz_main:before{
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      #604573 33.333%, #604573 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      #604573 33.333%, #604573 66.667%,
+      transparent 66.667%
+    );
+  background-size: 20px 40px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 10px;
+}
+
+.zz_gray-light{
+  position: relative;
+  background: #ededed;
+}
+
+.zz_gray-light:before{
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      #ededed 33.333%, #ededed 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      #ededed 33.333%, #ededed 66.667%,
+      transparent 66.667%
+    );
+  background-size: 20px 40px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 10px;
+}
+
+.zz_black{
+  position: relative;
+  background: #292929;
+}
+
+.zz_black:before{
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      #292929 33.333%, #292929 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      #292929 33.333%, #292929 66.667%,
+      transparent 66.667%
+    );
+  background-size: 20px 40px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 10px;
+}
+
+.zz_body{
+  position: relative;
+  background: #f3f3f3;
+}
+
+.zz_body:before{
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      #f3f3f3 33.333%, #f3f3f3 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      #f3f3f3 33.333%, #f3f3f3 66.667%,
+      transparent 66.667%
+    );
+  background-size: 20px 40px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 10px;
+}
+
+.zz_d:before{
+  bottom: -10px !important;
+  top: inherit !important;
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  -ms-transform: rotateZ(180deg);
+  -o-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+

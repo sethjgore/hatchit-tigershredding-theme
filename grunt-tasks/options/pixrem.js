@@ -12,7 +12,11 @@ module.exports = {
     replace: true
     },
   dist:{
-    src: 'style.css',
+    src: 'sass-ie/style-ie.css',
     dest: 'sass/shame/ie8.css'
+  },
+  ie:{
+    src: 'sass/shame/ie.css',
+    dest: 'sass/shame/ie-px.css'
   }
 }

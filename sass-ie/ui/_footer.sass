@@ -1,0 +1,65 @@
+footer
+  @extend .is__background--c-black
+
+.footer__box
+  +outer-container
+.footer__row
+  @extend .row
+  @extend %pt-20
+  @extend %pb-20
+
+%footer__text
+  @extend .is__text--c-white
+  @extend .is__text--bold
+  font-size: golden-ratio($heading-ratio, -3)
+  @extend .is__text--uppercase
+
+
+.footer__contact
+  @extend %mb-20
+  +span-columns(4 of 12)
+
+.footer__contact--list
+  @extend %footer__text
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+.footer__contact--heading
+  @extend .is__text--c-secondary
+  font-size: golden-ratio($heading-ratio, -3)
+
+.footer__logo-box
+  +span-columns(4 of 12)
+
+.footer__logo
+  height: 8rem
+
+.footer__logo--image
+  @extend .site-logo--image--dark
+
+.footer__menu
+  +span-columns(4 of 12)
+
+.footer__list
+  @extend .is__text--unbulleted
+  @extend .is__text--right
+  @extend %footer__text
+  margin-top: 0
+
+.footer__social-box
+  +fill-parent
+
+  ul
+    @extend .is__text--unbulleted
+    @extend .is__text--centered
+    padding: 0
+    margin: 0
+
+  li
+    @extend .is__this--inline
+  a
+    display: block
+    width: 3rem
+    height: 3rem
+    position: relative

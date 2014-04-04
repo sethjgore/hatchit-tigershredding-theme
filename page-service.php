@@ -24,7 +24,7 @@ Template Name: Page -- Service
               <?php if($alignment == "Left"): ?>
               <!-- LEFT CONTENT BLOCK -->
                 <div class="pagecontent__image">
-                  <img src="<?php the_sub_field('section_image'); ?>">
+                  <img src="<?php the_sub_field('section_image'); ?>" onerror="this.parentNode.removeChild(this)">
                 </div>
 
                 <div class="pagecontent__content">
@@ -70,7 +70,7 @@ Template Name: Page -- Service
 
                 </div>
                 <div class="pagecontent__image">
-                  <img src="<?php the_sub_field('section_image'); ?>">
+                  <img src="<?php the_sub_field('section_image'); ?>" onerror="this.parentNode.removeChild(this)">
                 </div>
 
               <?php endif; ?>

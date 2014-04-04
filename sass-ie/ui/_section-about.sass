@@ -1,0 +1,39 @@
+.block__about
+  @extend .is__background--c-main
+  @extend .block__pagecontent
+
+.about__box
+  +outer-container
+
+.about__company-box
+  +span-columns(4 of 12)
+
+  padding: 0 2rem
+
+  @extend .is__text--centered
+.about__image
+  margin: 0 auto
+
+.about__heading
+  @extend .is__text--c-white
+  @extend .is__text--uppercase
+  font-size: 1.2rem
+  @extend .is__text--bold
+.about__copy
+  //@extend .is__text--left
+
+.about__list
+  +span-columns(6 of 12)
+
+  ul
+    @extend .is__text--unbulleted
+
+  li
+    @extend .is__text--c-main
+    @extend .is__text--uppercase
+
+.about__list--right, .about__list--left
+  @extend .about__list
+
+.about__list--right
+  +omega

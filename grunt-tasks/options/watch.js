@@ -16,11 +16,11 @@ module.exports = {
     tasks : ['haml:layouts', 'haml:templates', 'haml:partials']
   },
   sass : {
-    files: ['sass/**/**/*.{sass, scss}'],
-    tasks : ['sass:dist', 'concat']
+    files: ['sass/**/**/*.{sass, scss}','sass-ie/**/**/*.{sass, scss}'],
+    tasks : ['sass', 'concat']
   },
   autoprefixer: {
-    files: ['sass/style-unprefixed.css'],
+    files: ['sass/style-unprefixed.css','sass-ie/style-unprefixed.css'],
     tasks: ['autoprefixer','pixrem']
   },
   coffee : {

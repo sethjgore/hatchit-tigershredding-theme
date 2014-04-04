@@ -1,0 +1,1 @@
+$('.site-logo--image').css('background-size','contain');
